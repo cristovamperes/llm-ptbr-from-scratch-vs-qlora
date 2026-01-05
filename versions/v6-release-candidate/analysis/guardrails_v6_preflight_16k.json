@@ -1,0 +1,82 @@
+{
+  "model_key": "v6_brwac_transformer_v6_preflight",
+  "tokenizer": "versions/v6-release-candidate/tokenizers/unigram_16k/spm_v6.model",
+  "thresholds": {
+    "max_fallback_ratio": 0.05,
+    "max_short_piece_ratio": 0.12
+  },
+  "aggregate": {
+    "model_key": "v6_brwac_transformer_v6_preflight",
+    "samples_count": 5,
+    "total_tokens": 1449,
+    "total_chars": 7569,
+    "avg_tokens_per_sample": 289.8,
+    "avg_chars_per_sample": 1513.8,
+    "fallback_tokens": 0,
+    "fallback_ratio": 0.0,
+    "short_alpha_tokens": 170,
+    "short_alpha_ratio": 0.11732229123533472
+  },
+  "per_sample": [
+    {
+      "seed": 101,
+      "token_count": 307,
+      "char_count": 1487,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 46,
+      "short_alpha_ratio": 0.1498371335504886
+    },
+    {
+      "seed": 102,
+      "token_count": 300,
+      "char_count": 1636,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 31,
+      "short_alpha_ratio": 0.10333333333333333
+    },
+    {
+      "seed": 103,
+      "token_count": 240,
+      "char_count": 1295,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 18,
+      "short_alpha_ratio": 0.075
+    },
+    {
+      "seed": 104,
+      "token_count": 305,
+      "char_count": 1560,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 46,
+      "short_alpha_ratio": 0.15081967213114755
+    },
+    {
+      "seed": 105,
+      "token_count": 297,
+      "char_count": 1591,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 29,
+      "short_alpha_ratio": 0.09764309764309764
+    }
+  ],
+  "passes": false,
+  "violations": [
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": 101,
+      "value": 0.1498371335504886,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": 104,
+      "value": 0.15081967213114755,
+      "threshold": 0.12
+    }
+  ]
+}

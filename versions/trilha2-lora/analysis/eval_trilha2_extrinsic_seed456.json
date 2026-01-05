@@ -1,0 +1,113 @@
+{
+  "generated_at": "2025-12-28T19:12:43Z",
+  "env": {
+    "python": "3.10.12",
+    "platform": "Linux-5.15.0-161-generic-x86_64-with-glibc2.35",
+    "torch": "2.5.1+cu121",
+    "cuda_available": true,
+    "cuda_device_count": 1,
+    "gpu_model": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_gb": 23.52,
+    "transformers": "4.57.3",
+    "datasets": "4.4.2",
+    "peft": "0.18.0",
+    "bitsandbytes": "0.49.0",
+    "accelerate": "1.12.0",
+    "git_commit": null
+  },
+  "dataset_dir": "/workspace/TCC/versions/trilha2-lora/analysis/extrinsic_seed456",
+  "manifest_path": "/workspace/TCC/versions/trilha2-lora/analysis/extrinsic_seed456/canarim_extrinsic_manifest.json",
+  "models": {
+    "baseline": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "use_4bit": true
+    },
+    "sft": {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "adapter_dir": "versions/trilha2-lora/outputs/sft_qlora_llama31_8b_instruct_canarim10k/adapter",
+      "use_4bit": true
+    }
+  },
+  "generation": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_prompt_tokens": 1536,
+    "batch_size": 4
+  },
+  "tasks": {
+    "qa": {
+      "task": "qa",
+      "n": 200,
+      "max_new_tokens": 32,
+      "timers": {
+        "base_sec": 111.95286011695862,
+        "sft_sec": 121.39623713493347,
+        "total_sec": 233.3490972518921
+      },
+      "generation_tokens": {
+        "base_generated_tokens": 24242,
+        "sft_generated_tokens": 22406
+      },
+      "metrics": {
+        "base": {
+          "em": 0.05,
+          "f1": 0.08230249692989872
+        },
+        "sft": {
+          "em": 0.08,
+          "f1": 0.1034224593261769
+        }
+      }
+    },
+    "summarization": {
+      "task": "summarization",
+      "n": 200,
+      "max_new_tokens": 160,
+      "timers": {
+        "base_sec": 507.9574644565582,
+        "sft_sec": 591.8270978927612,
+        "total_sec": 1099.7845623493195
+      },
+      "generation_tokens": {
+        "base_generated_tokens": 55839,
+        "sft_generated_tokens": 49931
+      },
+      "metrics": {
+        "base": {
+          "rouge_l_f1": 0.14994329167616452
+        },
+        "sft": {
+          "rouge_l_f1": 0.19237811087000664
+        }
+      }
+    },
+    "rewriting": {
+      "task": "rewriting",
+      "n": 200,
+      "max_new_tokens": 160,
+      "timers": {
+        "base_sec": 468.1776020526886,
+        "sft_sec": 323.55119013786316,
+        "total_sec": 791.7287921905518
+      },
+      "generation_tokens": {
+        "base_generated_tokens": 44232,
+        "sft_generated_tokens": 29780
+      },
+      "metrics": {
+        "base": {
+          "rouge_l_f1": 0.18249923808248297
+        },
+        "sft": {
+          "rouge_l_f1": 0.28931909816452983
+        }
+      }
+    }
+  },
+  "cost": {
+    "cost_usd_per_hour": 0.3,
+    "total_duration_sec": 2124.8624517917633,
+    "total_cost_usd": 0.17707187098264693
+  }
+}

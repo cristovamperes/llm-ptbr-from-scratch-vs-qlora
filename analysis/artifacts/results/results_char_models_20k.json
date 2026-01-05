@@ -1,0 +1,41 @@
+{
+  "config": {
+    "max_docs": 2000,
+    "min_len": 200,
+    "stride_eval": 4,
+    "batch_size": 1024,
+    "max_windows": 300000
+  },
+  "results": {
+    "v1_brwac_20k": {
+      "avg_loss": 1.5218483129882812,
+      "perplexity": 4.580683913126745,
+      "accuracy": 0.5500466666666667,
+      "windows": 300000,
+      "seq_len": 160,
+      "dataset_windows": 300000,
+      "model_path": "versions\\v1-char-rnn\\models\\modelo_brwac_v1_20k.keras",
+      "mapping_path": "versions\\v1-char-rnn\\mappings\\mapeamentos_brwac_v1_20k.pkl"
+    },
+    "v2_brwac_20k": {
+      "avg_loss": 1.4365574084472656,
+      "perplexity": 4.206190667208934,
+      "accuracy": 0.5669366666666666,
+      "windows": 300000,
+      "seq_len": 160,
+      "dataset_windows": 300000,
+      "model_path": "versions\\v2-char-lm\\models\\modelo_brwac_v2_20k.keras",
+      "mapping_path": "versions\\v2-char-lm\\mappings\\mapeamentos_brwac_v2_20k.pkl"
+    },
+    "v3_brwac_20k": {
+      "avg_loss": 1.3753068880208332,
+      "perplexity": 3.9562906748524433,
+      "accuracy": 0.5817666666666667,
+      "windows": 300000,
+      "seq_len": 160,
+      "dataset_windows": 300000,
+      "model_path": "versions\\v3-stacked-lstm\\models\\modelo_brwac_v3_20k.keras",
+      "mapping_path": "versions\\v3-stacked-lstm\\mappings\\mapeamentos_brwac_v3_20k.pkl"
+    }
+  }
+}

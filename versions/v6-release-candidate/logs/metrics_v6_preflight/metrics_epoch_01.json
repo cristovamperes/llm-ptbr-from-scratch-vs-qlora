@@ -1,0 +1,12 @@
+{
+  "accuracy": 0.2571823000907898,
+  "loss": 4.699565887451172,
+  "val_accuracy": 0.3307170569896698,
+  "val_loss": 4.0968523025512695,
+  "epoch": 1,
+  "perplexity": 109.89945336333089,
+  "val_perplexity": 60.15065324040162,
+  "tokens_epoch": 156876800,
+  "tokens_seen_total": 156876800,
+  "epoch_time_sec": 1924.8768649101257
+}

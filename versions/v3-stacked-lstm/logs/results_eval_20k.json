@@ -1,0 +1,21 @@
+{
+  "config": {
+    "max_docs": 2000,
+    "min_len": 200,
+    "stride_eval": 4,
+    "batch_size": 1024,
+    "max_windows": 300000
+  },
+  "results": {
+    "v3_brwac_20k": {
+      "avg_loss": 1.3753103889973959,
+      "perplexity": 3.956304525757617,
+      "accuracy": 0.58177,
+      "windows": 300000,
+      "seq_len": 160,
+      "dataset_windows": 300000,
+      "model_path": "versions/v3-stacked-lstm/models/modelo_brwac_v3_20k.keras",
+      "mapping_path": "versions/v3-stacked-lstm/mappings/mapeamentos_brwac_v3_20k.pkl"
+    }
+  }
+}

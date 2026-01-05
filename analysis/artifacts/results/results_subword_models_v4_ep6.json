@@ -1,0 +1,25 @@
+{
+  "config": {
+    "max_docs": 2000,
+    "min_len": 200,
+    "stride_eval": 2,
+    "batch_size": 1024,
+    "max_windows": 250000
+  },
+  "results": {
+    "v4_brwac_subword_ep6": {
+      "avg_loss": 4.286692671386719,
+      "perplexity": 72.72554303999907,
+      "accuracy": 0.236172,
+      "windows": 250000,
+      "seq_len": 192,
+      "dataset_windows": 250000,
+      "model_path": "versions/v4-subword-lstm/models/modelo_brwac_v4_subword_ep6.keras",
+      "mapping_path": "versions/v4-subword-lstm/mappings/mapeamentos_brwac_v4_ep6.pkl",
+      "tokenization": "sentencepiece",
+      "vocab_size": 3200,
+      "dataset_tokens": 1360290,
+      "tokenizer_model": "/root/TCC_v4/versions/v4-subword-lstm/tokenizer/spm_v4.model"
+    }
+  }
+}

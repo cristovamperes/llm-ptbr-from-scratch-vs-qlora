@@ -1,0 +1,17 @@
+{
+  "docs": 2000,
+  "total_tokens": 1228683,
+  "avg_tokens_per_doc": 614.3415,
+  "median_tokens_per_doc": 268.5,
+  "percentiles_tokens": {
+    "p50": 268.5,
+    "p75": 526.0,
+    "p90": 1177.0,
+    "p95": 2253.05,
+    "p99": 7006.519999999999,
+    "max": 16596.0
+  },
+  "total_chars": 4422028,
+  "avg_chars_per_doc": 2211.014,
+  "tokens_per_char_ratio": 0.2778550927312084
+}

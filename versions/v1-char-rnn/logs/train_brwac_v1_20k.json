@@ -1,0 +1,77 @@
+{
+  "timestamps": {
+    "started_at": "2025-10-16 21:20:56",
+    "ended_at": "2025-10-16 22:25:36",
+    "elapsed_sec": 3880.0163197517395
+  },
+  "env": {
+    "python": "3.10.12",
+    "tensorflow": "2.20.0",
+    "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.35",
+    "cpu": "x86_64",
+    "cpu_count": 32,
+    "gpu_devices": [
+      "NVIDIA GeForce RTX 3080"
+    ]
+  },
+  "dataset": {
+    "train_docs": 20000,
+    "val_docs": 0,
+    "min_len": 200,
+    "train_chars": 43364793,
+    "val_chars": 0,
+    "avg_train_chars_per_doc": 2168.23965,
+    "avg_val_chars_per_doc": 0
+  },
+  "cleaning": {
+    "lowercase": true,
+    "end_inline_sep": "newline",
+    "min_line_chars": 40,
+    "min_alpha_ratio": 0.4,
+    "normalize_numbers": true,
+    "drop_uppercase_metadata": true
+  },
+  "train_config": {
+    "arch": "v1",
+    "epocas": 2,
+    "batch_size": 256,
+    "tamanho_sequencia": 160,
+    "tamanho_lstm": 256,
+    "embedding_dim": 128,
+    "stride": 1,
+    "shuffle_buffer": 0,
+    "dropout": 0.0,
+    "recurrent_dropout": 0.0,
+    "clipnorm": 0.0,
+    "batch_log_freq": 500,
+    "seed": 42
+  },
+  "model": {
+    "train_windows": 43364633,
+    "val_windows": 0,
+    "train_windows_est": 43364633,
+    "val_windows_est": 0,
+    "tokens_per_epoch_est": 6938341280
+  },
+  "artifacts": {
+    "modelo": "versions/v1-char-rnn/models/modelo_brwac_v1_20k.keras",
+    "mapeamentos": "versions/v1-char-rnn/mappings/mapeamentos_brwac_v1_20k.pkl",
+    "csv_history": "versions/v1-char-rnn/logs/history_20251016_212036.csv",
+    "batch_log": "versions/v1-char-rnn/logs/batches_20251016_212036.log"
+  },
+  "performance": {
+    "elapsed_sec": 3880.0163197517395,
+    "elapsed_per_epoch_sec": 1940.0081598758698,
+    "train_windows_total": 86729266,
+    "tokens_per_epoch_est": 6938341280,
+    "tokens_total_est": 13876682560,
+    "windows_per_sec": 22352.80958961258,
+    "tokens_per_sec": 3576449.5343380133,
+    "approx_flops_per_token_train": 1973769.0,
+    "approx_total_flops_train": 2.738936585976864e+16,
+    "approx_total_tflops_train": 27389.36585976864
+  },
+  "git": {
+    "commit": "33c99297d3f0ba59aa548cf2cfaa0e584d5ed1d2"
+  }
+}

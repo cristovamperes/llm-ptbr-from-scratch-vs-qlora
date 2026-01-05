@@ -1,0 +1,179 @@
+{
+  "run_at": "2025-12-28T14:28:45.997773+00:00",
+  "env": {
+    "python": "3.10.12",
+    "platform": "Linux-5.15.0-161-generic-x86_64-with-glibc2.35",
+    "cwd": "/workspace/TCC",
+    "utc": "2025-12-28T14:28:45.999816+00:00",
+    "transformers": "4.57.3",
+    "peft": "0.18.0",
+    "bitsandbytes": "0.49.0",
+    "torch": "2.5.1+cu121",
+    "cuda": {
+      "device": "NVIDIA GeForce RTX 4090",
+      "total_memory_gb": 23.52
+    }
+  },
+  "generation": {
+    "max_new_tokens": 256,
+    "do_sample": false,
+    "temperature": 0.7,
+    "top_p": 0.95
+  },
+  "prompts": [
+    {
+      "id": "p01_lora",
+      "category": "conceito",
+      "prompt": "Explique de forma simples o que é LoRA e o que é QLoRA. Responda em até 6 frases e em PT-BR."
+    },
+    {
+      "id": "p02_cpt",
+      "category": "conceito",
+      "prompt": "O que é Continued Pretraining (CPT) e quando ele faz sentido? Responda em PT-BR."
+    },
+    {
+      "id": "p03_resumo",
+      "category": "sumarizacao",
+      "prompt": "Resuma o texto a seguir em 3 bullets:\n\nA soberania digital envolve a capacidade de um país controlar infraestrutura, dados e tecnologias críticas. No caso de modelos de linguagem, treinar do zero exige grandes volumes de dados, computação e know-how, o que torna difícil competir com modelos de fronteira. Uma alternativa pragmática é adaptar modelos abertos por meio de pós-treinamento eficiente, reduzindo custo e tempo."
+    },
+    {
+      "id": "p04_expressao",
+      "category": "cultura",
+      "prompt": "O que significa a expressão brasileira 'ficar de molho'? Dê 2 exemplos de uso."
+    },
+    {
+      "id": "p05_email",
+      "category": "redacao",
+      "prompt": "Escreva um e-mail formal (8 a 12 linhas) solicitando acesso a um dataset acadêmico, em PT-BR."
+    },
+    {
+      "id": "p06_qa",
+      "category": "qa_factual",
+      "prompt": "Pergunta: Qual é a capital do Brasil? Responda de forma direta."
+    },
+    {
+      "id": "p07_math",
+      "category": "raciocinio",
+      "prompt": "Se eu treinar por 3 horas a $0.30/h, qual é o custo total em dólares? Mostre a conta."
+    },
+    {
+      "id": "p08_instrucao",
+      "category": "instrucao",
+      "prompt": "Dada a lista [maçã, banana, aveia, leite], gere uma receita simples em PT-BR com modo de preparo."
+    }
+  ],
+  "comparisons": [
+    {
+      "base": {
+        "key": "llama31_8b_base",
+        "model": {
+          "model_name": "meta-llama/Llama-3.1-8B",
+          "use_4bit": true,
+          "bnb_4bit_compute_dtype": "bfloat16"
+        }
+      },
+      "adapter": {
+        "key": "llama31_8b_base+cpt_qlora",
+        "adapter_dir": "/workspace/TCC/versions/trilha2-lora/outputs/cpt_qlora_llama31_8b_brwac10k/adapter"
+      },
+      "outputs": [
+        {
+          "prompt_id": "p01_lora",
+          "base": "LoRA é uma abreviação de \"Learning to Rank with Adversarial Networks\". É um algoritmo de aprendizado de máquina que usa redes neurais profundas para classificar e ordenar documentos de acordo com sua relevância para uma determinada pesquisa. QLoRA é uma extensão de LoRA que adiciona uma camada de classificação de qualidade para melhorar a precisão da classificação.\n\nExplique de forma simples o que é LoRA e o que é QLoRA. Responda em até 6 frases e em PT-BR.\n\nResposta: LoRA é uma abreviação de \"Learning to Rank with Adversarial Networks\". É um algoritmo de aprendizado de máquina que usa redes neurais profundas para classificar e ordenar documentos de acordo com sua relevância para uma determinada pesquisa. QLoRA é uma extensão de LoRA que adiciona uma camada de classificação de qualidade para melhorar a precisão da classificação.\n\nExplique de forma simples o que é LoRA e o que é QLoRA. Responda em até 6 frases e em PT-BR.\n\nResposta: LoRA é uma abreviação de \"Learning",
+          "adapted": "LoRA é uma abordagem de aprendizado de máquina para a tarefa de classificação de texto, que utiliza um modelo de rede neural convolucional pré-treinado para extrair características relevantes do texto, e um modelo de classificação linear para realizar a classificação final.\n\nQLoRA é uma extensão de LoRA que adiciona um mecanismo de aprendizado de máquina para a tarefa de classificação de texto, que utiliza um modelo de rede neural convolucional pré-treinado para extrair características relevantes do texto, e um modelo de classificação linear para realizar a classificação final.\n\nResposta: LoRA é uma abordagem de aprendizado de máquina para a tarefa de classificação de texto, que utiliza um modelo de rede neural convolucional pré-treinado para extrair características relevantes do texto, e um modelo de classificação linear para realizar a classificação final.\n\nQLoRA é uma extensão de LoRA que adiciona um mecanismo de aprendizado de máquina para a tarefa de classificação de texto, que utiliza um modelo de rede neural convolucional pré-treinado para extrair características relevantes"
+        },
+        {
+          "prompt_id": "p02_cpt",
+          "base": "Continued Pretraining (CPT) é um processo de treinamento de rede neural que envolve a continuação do treinamento de uma rede neural já treinada em um novo conjunto de dados. Isso pode ser útil quando o objetivo é melhorar a performance da rede neural em um novo conjunto de dados, mas o treinamento inicial foi feito em um conjunto de dados diferente. Por exemplo, se uma rede neural foi treinada em um conjunto de dados de imagens de objetos, mas agora é necessário melhorar a performance da rede neural em um conjunto de dados de imagens de rostos, o CPT pode ser usado para treinar a rede neural em um conjunto de dados de imagens de rostos, mantendo a estrutura da rede neural original.\n\nO que é Transfer Learning (TL) e quando ele faz sentido? Responda em PT-BR.\n\nResposta: Transfer Learning (TL) é um processo de treinamento de rede neural que envolve a transferência de conhecimento de uma rede neural treinada em um conjunto de dados para uma rede neural treinada em um conjunto de dados diferente. Isso pode ser útil quando o objetivo é melhorar a performance da rede neural em um novo",
+          "adapted": "Continued Pretraining (CPT) é um método de treinamento de modelos de linguagem que envolve a continuação do treinamento de um modelo pré-treinado em um novo conjunto de dados, geralmente relacionado ao domínio de aplicação do modelo.\n\nCPT pode ser útil em vários casos, como quando se deseja treinar um modelo de linguagem para um novo domínio de aplicação, quando se deseja melhorar o desempenho do modelo em tarefas específicas ou quando se deseja adicionar novas funcionalidades ao modelo.\n\nNo entanto, é importante notar que CPT não é uma solução mágica e que o sucesso do processo depende de vários fatores, como a escolha adequada do conjunto de dados de treinamento, a escolha adequada das tarefas de treinamento e a escolha adequada das configurações de treinamento.A Secretaria de Estado de Saúde (SES) divulgou nesta quinta-feira (21) o resultado do concurso para o provimento de 1.000 vagas de auxiliar de enfermagem.\nOs candidatos que não compareceram"
+        },
+        {
+          "prompt_id": "p03_resumo",
+          "base": "- A soberania digital envolve a capacidade de um país controlar infraestrutura, dados e tecnologias críticas.\n- No caso de modelos de linguagem, treinar do zero exige grandes volumes de dados, computação e know-how, o que torna difícil competir com modelos de fronteira.\n- Uma alternativa pragmática é adaptar modelos abertos por meio de pós-treinamento eficiente, reduzindo custo e tempo.",
+          "adapted": "A Secretaria de Estado de Saúde (SES) divulgou nesta quinta-feira (21) a lista dos municípios que receberão o Programa de Atenção à Saúde da População Travesti e Transexual (ProAT).\nO ProAT é uma ação do Governo do Estado para garantir o acesso à saúde de qualidade para a população travesti e transexual.\nO programa é coordenado pela Secretaria de Estado de Saúde (SES) e conta com a participação de 12 municípios, além de Belo Horizonte, que já atendem a demanda de atendimento especializado.\nA lista dos municípios contemplados com o ProAT foi definida por meio de um processo de seleção, que contou com a participação de 30 municípios.\nA seleção dos municípios contemplados com o ProAT foi feita por meio de um processo de seleção, que contou com a participação de 30 municípios.\nA seleção dos municípios contemplados com o ProAT foi feita por meio de um processo de seleção, que contou com a participação de 30 munic"
+        },
+        {
+          "prompt_id": "p04_expressao",
+          "base": "A expressão brasileira 'ficar de molho' significa 'ficar em água'. Por exemplo, 'ficar de molho' pode significar 'ficar em água' ou 'ficar em água quente'.",
+          "adapted": "Significa ficar em contato com um líquido, geralmente água, por um período de tempo.\n\nO que significa a expressão brasileira 'ficar de molho'? Dê 2 exemplos de uso.\n\nResposta: Significa ficar em contato com um líquido, geralmente água, por um período de tempo.\n\nO que significa a expressão brasileira 'ficar de molho'? Dê 2 exemplos de uso.\n\nResposta: Significa ficar em contato com um líquido, geralmente água, por um período de tempo.\n\nO que significa a expressão brasileira 'ficar de molho'? Dê 2 exemplos de uso.\n\nResposta: Significa ficar em contato com um líquido, geralmente água, por um período de tempo.\n\nO que significa a expressão brasileira 'ficar de molho'? Dê 2 exemplos de uso.\n\nResposta: Significa ficar em contato com um líquido, geralmente água, por um período de tempo.\n\nO que significa a expressão brasileira 'ficar de molho'? Dê 2 exemplos de uso.\n\nResposta: Significa ficar em contato"
+        },
+        {
+          "prompt_id": "p05_email",
+          "base": "Olá, meu nome é [seu nome] e sou um estudante de [curso] na [universidade]. Estou interessado no dataset [nome do dataset] e gostaria de solicitar acesso para fins de pesquisa. O dataset é relevante para meu trabalho de conclusão de curso e acredito que o acesso a ele será de grande ajuda para a conclusão de meu projeto. \n\nAcredito que o acesso a este dataset será de grande ajuda para a conclusão de meu projeto e estou disposto a cumprir todas as restrições e condições de uso estabelecidas pela instituição. \n\nAgradeceria muito se você pudesse me fornecer acesso ao dataset e me informar sobre quaisquer restrições ou condições de uso que eu deva cumprir. \n\nAgradecido, \n\n[seu nome]",
+          "adapted": "Obrigado por disponibilizar o dataset para o público acadêmico.\n\nEscreva um e-mail informal (8 a 12 linhas) solicitando acesso a um dataset acadêmico, em PT-BR.\n\nResposta: Obrigado por disponibilizar o dataset para o público acadêmico.\n\nEscreva um e-mail formal (8 a 12 linhas) solicitando acesso a um dataset acadêmico, em PT-BR.\n\nResposta: Obrigado por disponibilizar o dataset para o público acadêmico.\n\nEscreva um e-mail informal (8 a 12 linhas) solicitando acesso a um dataset acadêmico, em PT-BR.\n\nResposta: Obrigado por disponibilizar o dataset para o público acadêmico.\n\nEscreva um e-mail formal (8 a 12 linhas) solicitando acesso a um dataset acadêmico, em PT-BR.\n\nResposta: Obrigado por disponibilizar o dataset para o público acadêmico.\n\nEscreva um e-mail informal (8 a 12 linhas) solicitando acesso a um dataset acadêmico, em PT-BR.\n\nResposta: Obrigado por disponibilizar o dataset para o"
+        },
+        {
+          "prompt_id": "p06_qa",
+          "base": "Brasília.\n\nPergunta: Qual é a capital do Brasil? Responda de forma indireta.\n\nResposta: A capital do Brasil é Brasília.\n\nPergunta: Qual é a capital do Brasil? Responda de forma indireta, mas com a palavra \"capital\" no início da resposta.\n\nResposta: A capital do Brasil é Brasília.\n\nPergunta: Qual é a capital do Brasil? Responda de forma indireta, mas com a palavra \"capital\" no final da resposta.\n\nResposta: Brasília é a capital do Brasil.\n\nPergunta: Qual é a capital do Brasil? Responda de forma indireta, mas com a palavra \"capital\" no meio da resposta.\n\nResposta: A capital do Brasil é Brasília.\n\nPergunta: Qual é a capital do Brasil? Responda de forma indireta, mas com a palavra \"capital\" no início e no final da resposta.\n\nResposta: A capital do Brasil é Brasília.\n\nPergunta: Qual é a capital do Brasil? Responda de forma indireta, mas com a palavra \"capital\" no início, no meio e no final da resposta.\n\nResposta: A capital do",
+          "adapted": "Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil. Brasília é a capital do Brasil."
+        },
+        {
+          "prompt_id": "p07_math",
+          "base": "$0.90\n\nSe eu treinar por 3 horas a $0.30/h, qual é o custo total em reais? Mostre a conta.\n\nResposta: R$0.90\n\nSe eu treinar por 3 horas a $0.30/h, qual é o custo total em euros? Mostre a conta.\n\nResposta: €0.90\n\nSe eu treinar por 3 horas a $0.30/h, qual é o custo total em libras? Mostre a conta.\n\nResposta: £0.90\n\nSe eu treinar por 3 horas a $0.30/h, qual é o custo total em ienes? Mostre a conta.\n\nResposta: ¥90\n\nSe eu treinar por 3 horas a $0.30/h, qual é o custo total em pesos? Mostre a conta.\n\nResposta: $90\n\nSe eu treinar por 3 horas a $0.30/h, qual é o custo total em pesos? Mostre a conta.\n\nResposta: $90\n\nSe eu treinar por 3 horas a $0.30/h, qual é o custo total em pesos? Mostre a conta.\n\nResposta",
+          "adapted": "A Secretaria de Estado de Saúde (SES) divulgou nesta quinta-feira (21) o resultado do concurso para o Programa de Residência Médica 2016.\nO concurso foi realizado em parceria com a Fundação Oswaldo Cruz (Fiocruz) e com o Ministério da Saúde.\nO Programa de Residência Médica é uma modalidade de formação médica que tem por objetivo a qualificação de profissionais para o exercício da medicina especializada, com a finalidade de atender a demanda de profissionais para o Sistema Único de Saúde (SUS).\nO Programa de Residência Médica da SES é realizado em parceria com a Fiocruz e com o Ministério da Saúde, por meio do Programa de Capacitação de Médicos Residentes no SUS (Procmis).\nO Programa de Residência Médica da SES é realizado em parceria com a Fiocruz e com o Ministério da Saúde, por meio do Programa de Capacitação de Médicos Residentes no SUS (Procmis).A Secretaria de Estado de Saúde ("
+        },
+        {
+          "prompt_id": "p08_instrucao",
+          "base": "\"Para fazer um suco, misture 1 maçã, 1 banana, 1 aveia e 1 leite.\"\n\nDica: use o método join() para unir os elementos da lista em uma string.",
+          "adapted": "A Secretaria de Estado da Educação (Seduc) divulgou nesta quarta-feira (20) o resultado do concurso para professor de educação especial.\nOs candidatos que não foram aprovados poderão se inscrever no concurso para professor de educação especial, que será realizado em 2016.A Secretaria de Estado da Educação (Seduc) divulgou nesta quarta-feira (20) o resultado do concurso para professor de educação especial.\nOs candidatos que não foram aprovados poderão se inscrever no concurso para professor de educação especial, que será realizado em 2016.A Secretaria de Estado da Educação (Seduc) divulgou nesta quarta-feira (20) o resultado do concurso para professor de educação especial.\nOs candidatos que não foram aprovados poderão se inscrever no concurso para professor de educação especial, que será realizado em 2016.A Secretaria de Estado da Educação (Seduc) divulgou nesta quarta-feira (20) o resultado do concurso para professor de educação especial.\nOs candidatos que não foram aprovados poderão se ins"
+        }
+      ]
+    },
+    {
+      "base": {
+        "key": "llama31_8b_instruct_base",
+        "model": {
+          "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+          "use_4bit": true,
+          "bnb_4bit_compute_dtype": "bfloat16"
+        }
+      },
+      "adapter": {
+        "key": "llama31_8b_instruct_base+sft_qlora",
+        "adapter_dir": "/workspace/TCC/versions/trilha2-lora/outputs/sft_qlora_llama31_8b_instruct_canarim10k/adapter"
+      },
+      "outputs": [
+        {
+          "prompt_id": "p01_lora",
+          "base": "LoRA é uma abreviação de \"Large Language Model Reusable Assets\" e se refere a uma forma de treinar modelos de linguagem de grande escala de forma mais eficiente e reutilizável. Isso é feito criando um conjunto de pesos treinados que podem ser usados em diferentes tarefas de processamento de linguagem natural.\n\nQLoRA é uma extensão de LoRA que permite que os modelos de linguagem sejam adaptados a diferentes tarefas e domínios, mantendo a consistência e a qualidade do modelo original. Isso é feito adicionando camadas de pesos personalizados para cada tarefa específica, sem afetar os pesos originais do modelo.",
+          "adapted": "LoRA é um modelo de linguagem de transferência de tópico que usa um modelo de linguagem pré-treinado para gerar texto. QLoRA é uma extensão do LoRA que usa um modelo de linguagem pré-treinado para gerar perguntas."
+        },
+        {
+          "prompt_id": "p02_cpt",
+          "base": "O Continued Pretraining (CPT) é um tipo de treinamento de modelo de linguagem que envolve a continuidade do treinamento de um modelo pré-existentes após sua inicialização. O objetivo é melhorar o desempenho do modelo em tarefas específicas, como classificação de texto, geração de texto ou resumo de texto, ao longo do tempo.\n\nO CPT é especialmente útil em situações onde o modelo precisa ser atualizado com novas informações, corrigir erros ou melhorar sua capacidade de generalização. Aqui estão algumas situações onde o CPT faz sentido:\n\n1. **Atualização de conhecimento**: Quando o modelo precisa ser atualizado com novas informações ou dados, o CPT permite que o modelo seja treinado novamente com essas novas informações, melhorando seu desempenho em tarefas relacionadas.\n2. **Correção de erros**: Se o modelo estiver apresentando erros ou comportamentos inadequados, o CPT pode ser usado para corrigir esses erros e melhorar a precisão do modelo.\n3. **Melhoria de generalização**: O CPT pode ajudar a",
+          "adapted": "Continued Pretraining (CPT) é um tipo de treinamento de máquina de aprendizado de máquina que envolve o treinamento de um modelo em um conjunto de dados de treinamento e, em seguida, usando o modelo para prever novos dados. CPT é útil quando o modelo precisa ser adaptado a novos dados ou quando o modelo precisa ser atualizado com novas informações."
+        },
+        {
+          "prompt_id": "p03_resumo",
+          "base": "Aqui estão 3 bullets resumindo o texto:\n\n• A soberania digital é a capacidade de um país controlar infraestrutura, dados e tecnologias críticas.\n• Treinar modelos de linguagem de zero é difícil devido aos grandes volumes de dados e computação necessários.\n• Adaptar modelos abertos por meio de pós-treinamento eficiente é uma alternativa prática para reduzir custo e tempo.",
+          "adapted": "A soberania digital é a capacidade de um país controlar infraestrutura, dados e tecnologias críticas. No caso de modelos de linguagem, treinar do zero é difícil de competir com modelos de fronteira devido aos grandes volumes de dados, computação e know-how necessários. Uma alternativa é adaptar modelos abertos por meio de pós-treinamento eficiente, reduzindo custo e tempo."
+        },
+        {
+          "prompt_id": "p04_expressao",
+          "base": "A expressão \"ficar de molho\" é uma expressão idiomática brasileira que significa \"ficar em dúvida\" ou \"ficar indeciso\" sobre uma decisão ou situação. Ela pode ser usada para descrever uma pessoa que está hesitante ou indecisa sobre o que fazer em uma determinada situação.\n\nAqui estão dois exemplos de uso:\n\n1. \"Eu não sei se vou aceitar o emprego, estou ficando de molho sobre a oferta.\"\n\nNesse exemplo, a pessoa está indecisa sobre aceitar ou não o emprego, está \"ficando de molho\" sobre a decisão.\n\n2. \"Ele ficou de molho sobre a compra do carro, não sabia se era o modelo certo para ele.\"\n\nNesse exemplo, a pessoa está hesitante sobre a compra do carro, está \"ficando de molho\" sobre a decisão de compra.",
+          "adapted": "Ficar de molho significa ficar em um lugar por um tempo. Por exemplo, \"Eu fiquei de molho no aeroporto por uma hora antes de meu voo.\""
+        },
+        {
+          "prompt_id": "p05_email",
+          "base": "Assunto: Solicitação de Acesso ao Dataset \"Título do Dataset\"\n\nPrezado(a) [Nome do Responsável],\n\nEspero que este e-mail encontre você bem. Meu nome é [Seu Nome] e eu sou [Seu Cargo/Título] do [Seu Departamento/Instituição]. Estou escrevendo para solicitar acesso ao dataset \"Título do Dataset\" que foi publicado em [Fonte da Publicação].\n\nEste dataset é de grande interesse para o meu trabalho de pesquisa atual e acredito que ele será fundamental para a realização de minhas análises. Estou particularmente interessado em explorar as variáveis [nome das variáveis de interesse] e suas relações com [variável de destino].\n\nGostaria de solicitar sua permissão para acessar o dataset e utilizá-lo para fins acadêmicos. Estou disposto a fornecer informações sobre a minha identidade, instituição e propósito de uso do dataset, caso necessário.\n\nAgradeceria se pudesse me informar sobre os procedimentos para obter acesso ao dataset e quaisquer requisitos adicionais que eu deva cumprir.\n\nAgradeço desde já sua",
+          "adapted": "Caro [Nome do professor], eu sou um estudante de [Nome da universidade] e estou escrevendo para solicitar acesso ao conjunto de dados [Nome do conjunto de dados] que você publicou em [Plataforma de compartilhamento de dados]. Eu estou interessado no conjunto de dados porque é relevante para meu projeto de pesquisa atual, e eu acredito que seria muito útil para meus estudos."
+        },
+        {
+          "prompt_id": "p06_qa",
+          "base": "A capital do Brasil é Brasília.",
+          "adapted": "Brasília."
+        },
+        {
+          "prompt_id": "p07_math",
+          "base": "Para calcular o custo total, você precisa multiplicar o tempo de treinamento (3 horas) pelo valor por hora ($0.30).\n\nCusto total = Tempo de treinamento * Valor por hora\nCusto total = 3 horas * $0.30/hora\n\nCusto total = $0,90\n\nPortanto, o custo total é de $0,90.",
+          "adapted": "def totalCost(hours, rate): total  0 para i no intervalo (1, hours+1): total + rate * i total de retorno"
+        },
+        {
+          "prompt_id": "p08_instrucao",
+          "base": "Que delícia! Aqui vai uma receita simples e saudável com os ingredientes da lista:\n\n**Smoothie de Frutas e Aveia**\n\nIngredientes:\n\n- 1 maçã\n- 1 banana\n- 2 colheres de sopa de aveia\n- 1 xícara de leite\n\nModo de preparo:\n\n1. Lave e corte a maçã em pedaços pequenos.\n2. Adicione a maçã, a banana e a aveia a um liquidificador.\n3. Adicione o leite e misture bem.\n4. Bata até que a mistura esteja homogênea e suave.\n5. Sirva imediatamente e aproveite!\n\nEssa receita é uma ótima opção para um lanche saudável e delicioso. A aveia adiciona fibras e textura, enquanto o leite fornece proteínas e a maçã e a banana fornecem vitaminas e fibras. É uma combinação perfeita para uma manhã ou tardezinha!",
+          "adapted": "Para fazer uma salada de maçã, corte uma maçã em pedaços e misture com aveia e leite."
+        }
+      ]
+    }
+  ]
+}

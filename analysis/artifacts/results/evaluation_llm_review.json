@@ -1,0 +1,341 @@
+{
+  "input_file": "analysis\\samples_brwac_custom_prompts.json",
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "generated_at": "2025-10-26T23:55:11",
+  "seed": 12345,
+  "evaluations": [
+    {
+      "model": "v3_brwac_20k",
+      "seed": 105,
+      "prompt": "Uma rede de hospitais privados avalia expansao para telemedicina, protocolos integrados de prontuario, parcerias com seguradoras, capacidade de leitos, gestao de estoque farmacologico e contratacao medica.",
+      "output": "\numa delegacia de profissionais e os políticos de micros, resolveu conseguir a polícia em relação à vida em negócios e a linha para o pesquisador de análise e depender de disposição de dados de uma concessão de vida, não conseguiu demonstrar que uma escola de mesmo com o que pret",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos aspectos da telemedicina ou gestão hospitalar. A coerência é muito baixa, com frases desconexas e sem lógica. O estilo apresenta problemas significativos, com uso inadequado da língua portuguesa e falta de clareza na comunicação."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_ep2",
+      "seed": 101,
+      "prompt": "O setor de infraestrutura logistica brasileira debate novas concessoes ferroviarias, cronogramas de duplicacao, metas de produtividade e integracao com portos para desafogar corredores de exportacao.",
+      "output": "- o seu nome se refere à borda de uma vida em círculo, é o que se o mais alto, para o momento, o que quer, com o seu papel, o que o sol não se é o maior que se pode. o sequestramento de cavaleiros e a cápula, o que é, no sentido de passar,, de modo que o seu seu papel não se transforma em seu corpo e é o seu maior valor; se ele está na sua vida, se o seu se torna o seu desejo, a partir de um pequeno outro lugar.",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum aspecto das concessões ferroviárias ou infraestrutura logística. A coerência é severamente comprometida, apresentando frases desconexas e sem sentido. O estilo é confuso, com uso inadequado de vocabulário e estrutura gramatical, dificultando a compreensão."
+      }
+    },
+    {
+      "model": "v3_brwac_20k",
+      "seed": 103,
+      "prompt": "Engenheiros de software de uma fintech planejam migracao para microservicos, definem SLAs, monitoramento proativo, politicas de rollback continuo e treinamentos para times de suporte e compliance.",
+      "output": "\na receita de empresas da cadeia de comunicação de seu reverência do projeto da universidade de sensação (andiel e tratamento ou políticas de repercussão do governo de transporte e efetivamento da construção de seus resultados para o seu trabalho com entrevistas em nome de paulo ",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao prompt, não abordando o tema de migração para microserviços ou os aspectos técnicos mencionados. A coerência é muito baixa, com frases desconexas e sem lógica clara. O estilo apresenta problemas significativos, com uso inadequado de vocabulário e estrutura confusa."
+      }
+    },
+    {
+      "model": "v1_brwac_20k",
+      "seed": 104,
+      "prompt": "A diretoria de um clube de futebol negocia patrocinio master, reforcos na janela de transferencia, metas de bilheteria, programa de socios e auditoria das contas apos uma temporada irregular nos gramados.",
+      "output": "\nna estrutura de conta as contratados com a importância da vida para trabalho de motor como a democratica e comparação com a criança de se presente são a diretoria do amor na agosto, no manutenção da extra a via tomar que foram de energia ao serviço do processo em um estado de co",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é irrelevante em relação ao tema proposto, não abordando os pontos principais do prompt. A coerência é muito baixa, com frases desconexas e falta de lógica. O estilo apresenta problemas significativos, com uso inadequado da língua portuguesa e vocabulário confuso."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_lstm_ep2",
+      "seed": 103,
+      "prompt": "Engenheiros de software de uma fintech planejam migracao para microservicos, definem SLAs, monitoramento proativo, politicas de rollback continuo e treinamentos para times de suporte e compliance.",
+      "output": "a cobertura foi a melhor opção do brasil, por meio da lager e uma série de peixes de um tel de dronês de 0 anos, e se estaria no cinema de um núcleo de cracki.h no | 0 (sorp) e de mata, 0h0 0 de agosto de 0 e 0ks, uma das maiores características da f-0. uma nova china se tornou uma equipe de áfrica da camborda do f-0, com vôlei, o seu novo filme do sul, mas foi realizado por 0 de fevereiro de 0.",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 0,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, apresentando informações desconexas e sem relação com a migração para microserviços. A fluidez e a lógica estão ausentes, resultando em um texto confuso e incoerente. O uso do português é muito limitado, com várias repetições e erros que comprometem a compreensão."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_ep2",
+      "seed": 102,
+      "prompt": "Analistas do mercado financeiro reavaliam previsoes trimestrais para bancos listados, discutem juros, carteira de credito, inadimplencia corporativa e estrategias de hedge diante de volatilidade externa.",
+      "output": "com o mais fraco, o preço de f-0 ou emb$0,0, no mínimo de 0 a 0 anos, a empresa que não teria, que o rj não é mais fácil de demora, em qualquer momento, para o seu crédito. o preço de venda da indústria doméstica no mercado brasileiro não não pode ser deficiente. com o preço médio de venda, é só a taxa de reportagem, que não é de vendas, mas não não vejo nada de vendas em qualquer momento, a preço mínima é o preço médio de venda, ou que em sua conta, não está só, mas não não sabe ser o que está vendo o preço médio de venda, o preço médio de r$ 0,0. e isso, o preço médio da venda é uma maior empresa para o valor médio das r$0,0.",
+      "evaluation": {
+        "relevancia": 1,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado apresenta uma falta significativa de clareza e conexão com o tema proposto. A repetição de frases e a incoerência nas ideias dificultam a compreensão. É necessário um maior alinhamento com os tópicos relevantes do mercado financeiro para melhorar a qualidade do conteúdo."
+      }
+    },
+    {
+      "model": "v2_brwac_20k",
+      "seed": 103,
+      "prompt": "Engenheiros de software de uma fintech planejam migracao para microservicos, definem SLAs, monitoramento proativo, politicas de rollback continuo e treinamentos para times de suporte e compliance.",
+      "output": "\na pressão em lagos da edificação da polícia é uma revista de concentração da assembleia local, que conseguiu a instituição de substâncias de responsável por meio de finalidade de dia.\na sua consideração entre os políticos nas regiões de vida e se apresentou a ser instituído pelo",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, abordando assuntos não relacionados. A coerência é muito baixa, com frases desconexas e sem lógica. O estilo apresenta problemas significativos, com uso inadequado da língua portuguesa e falta de clareza."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_lstm_ep2",
+      "seed": 102,
+      "prompt": "Analistas do mercado financeiro reavaliam previsoes trimestrais para bancos listados, discutem juros, carteira de credito, inadimplencia corporativa e estrategias de hedge diante de volatilidade externa.",
+      "output": "dc 0 - do ic0 de 0 de junho de 0:5 de agosto de 0 0 novembro de 0 (de 0 anos) 0-6/0 e no último dia 0 de setembro de 0 de agosto de 0 0:0 o grupo do ironk/rs, que teve o objetivo de que o seu projeto foi um dos maiores componentes das obras do município, e o presidente da associação de distribuição e renda de direitos humanos, de 0 de dezembro de 0, o presidente da câmara municipal de saúde e de desenvolvimento doméstica, onde se refere à empresa, e os alunos da lei necopática, do centro da indústria doméstica (ora) e a partir de 0, e que os recursos da sociedade civil e a partir da lei, foram preso em 0, como o número de póloos, para a data, o autor de peixes.",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 0,
+        "estilo": 0,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, apresentando informações desconexas e sem relação com o mercado financeiro. A falta de coerência e fluidez torna a leitura confusa e sem sentido. Além disso, o estilo é inadequado, com uso de termos e frases que não se conectam de forma lógica."
+      }
+    },
+    {
+      "model": "v3_brwac_20k",
+      "seed": 101,
+      "prompt": "O setor de infraestrutura logistica brasileira debate novas concessoes ferroviarias, cronogramas de duplicacao, metas de produtividade e integracao com portos para desafogar corredores de exportacao.",
+      "output": "\na matéria especializada pode ser desprezada com o texto ativo do projeto de verdadeiro conjunto de processos promovidos na consciência externa de responsabilidade do computador do país a considerar o então de uma apresentação de design assistir com a escola informada.\na abordage",
+      "evaluation": {
+        "relevancia": 1,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado apresenta uma falta de clareza e conexão com o tema proposto, tornando-se irrelevante. A estrutura é confusa e não segue uma lógica coerente, dificultando a compreensão. Além disso, o vocabulário utilizado é inadequado e não se alinha ao contexto da infraestrutura logística brasileira."
+      }
+    },
+    {
+      "model": "v1_brwac_20k",
+      "seed": 103,
+      "prompt": "Engenheiros de software de uma fintech planejam migracao para microservicos, definem SLAs, monitoramento proativo, politicas de rollback continuo e treinamentos para times de suporte e compliance.",
+      "output": "\na presença do baixo com a cabeça e a distribuição de associação com o senado ao conjunto do brasil com calma de investigação por empregado em meio antes de construção pela rede em maio de nossos estados unidos e na restrito santo antigo tratados com a receita na proposta em um e",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos aspectos da migração para microserviços ou SLAs. A coerência é extremamente baixa, com frases desconexas e sem lógica. O estilo apresenta problemas significativos, com uso inadequado de vocabulário e estrutura gramatical confusa."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_ep2",
+      "seed": 104,
+      "prompt": "A diretoria de um clube de futebol negocia patrocinio master, reforcos na janela de transferencia, metas de bilheteria, programa de socios e auditoria das contas apos uma temporada irregular nos gramados.",
+      "output": "em 0, de 0 de março de 0, o primeiro cnb. o que se refere ao mesmo tempo, a pena de que o brasil tenha sido feito no brasil. o ano passado é a melhor opção de hoje, com a participação de um bom nível de atuação em quadrinhos. essa é o que você sabe se não gostar. é muito importante para o mundo, um grande exemplo do país. não está só para a criação de uma semana com a intenção de fazer o que se trata de um país. o maior momento de que os frutos são tão diferentes para a história do mundo, da gama ou a cena, mas os conhecimentos estão sendo o lado.",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos tópicos mencionados no prompt. A coerência é extremamente baixa, com frases desconexas e sem lógica. O estilo apresenta problemas significativos, com uso inadequado da língua portuguesa e falta de clareza."
+      }
+    },
+    {
+      "model": "v1_brwac_20k",
+      "seed": 105,
+      "prompt": "Uma rede de hospitais privados avalia expansao para telemedicina, protocolos integrados de prontuario, parcerias com seguradoras, capacidade de leitos, gestao de estoque farmacologico e contratacao medica.",
+      "output": "\numa conseqüência de mim com o produto de motor e escolher em arma de cabelo com a todo o processo do profissional e o carro do centro do seu estado a viagem de desenvolvimento de paraíba e mais apresentar com explicar para casa e de educação em você na arrecionalidade do país.\no",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos aspectos da telemedicina ou gestão hospitalar. A coerência é muito baixa, com frases desconexas e sem lógica. O estilo apresenta problemas significativos, com uso inadequado da língua portuguesa e falta de clareza."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_ep2",
+      "seed": 105,
+      "prompt": "Uma rede de hospitais privados avalia expansao para telemedicina, protocolos integrados de prontuario, parcerias com seguradoras, capacidade de leitos, gestao de estoque farmacologico e contratacao medica.",
+      "output": "o #cantão, que não é exposta de fibras, que não está sendo muito difícil, é que não é uma boa opção, não são necessárias para que o que não é exposta. o que é uma pessoa se dá a todas as pessoas com a pele, como a fritiga a besta, o que a sua capacidade de curar, o pêxico é um dos demais e não tenho medo de que ninguém tem mais resistência. o que está sendo assim, quando se a pessoa tenha a oportunidade de realizar uma mudança na vida de bola, uma pessoa. assim, o que a gente não está no quarto de barracos. a primeira coisa é o que o co2? não se sentem em relação a todos os que o nosso corpo está sendo denominado no rio de janeiro, pois é muito difícil, se você se vê em que os dois dias, o mais alto, a dormir, quando a vida, bem bem é que não está bem. para que o senhor não está, só a sua vida é um que só pode ser bem amora, em que você não tem um bom amor. mas gostaria de voltar ao que você está aqui e está a perguntar sobre que você já está sendo difícil. o que você pode ter uma palavra, eu não sei não sei que você",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos tópicos mencionados no prompt. A coerência é extremamente baixa, com frases desconexas e sem lógica. O estilo apresenta problemas significativos, com uso inadequado da língua portuguesa e repetição de ideias sem clareza."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_ep2",
+      "seed": 103,
+      "prompt": "Engenheiros de software de uma fintech planejam migracao para microservicos, definem SLAs, monitoramento proativo, politicas de rollback continuo e treinamentos para times de suporte e compliance.",
+      "output": "o que você vai é o seu filho, se você for, se for o que você pode ser credível para o seu que o céu não é um bom tempo que você está fazendo ou, se você não quiser alguma coisa, a palavra para evitar a responsabilidade. o que você não pode entrar em contato com a pessoa, você pode ter que ser o seu que você gosta de fazer, se você você vai ter mais sua fé, com você você sabe que você está se você está sendo você e você pode ter uma pessoa com você. você poderá usar um conjunto de consultas ou descargas. você deve ficar no seu quarto de madeira, você pode ser uma pessoa ou você. você pode ficar na rua, o que você pode comprar um seu corpo, você pode usar o seu corpo ou seu coração. você deve usar você deve ser ou você, você pode simplesmente você de não você sabe, você pode ser simplesmente você ou você você pode ficar ou você. você deve ter um grande amor com você. você pode ter uma mudança de amor. você é uma pessoa que você se pode ter mais você e você você sentir. você poderá entrar em contato com você, você tem um que você pode ter um desejo de uma pessoa com um momento. você pode usar você não pode ser simples ou você está fazendo você com você você você pode",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 0,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos aspectos da migração para microserviços. A coerência é severamente comprometida, apresentando uma sequência de frases desconexas e sem lógica. O estilo é fraco, com repetição excessiva de palavras e falta de clareza na comunicação."
+      }
+    },
+    {
+      "model": "v1_brwac_20k",
+      "seed": 102,
+      "prompt": "Analistas do mercado financeiro reavaliam previsoes trimestrais para bancos listados, discutem juros, carteira de credito, inadimplencia corporativa e estrategias de hedge diante de volatilidade externa.",
+      "output": "\nesse seu amor sua presença de um amor encontrar no mundo na característica na estratégia de casamento de alimentos de todos os novos palavras e mais campos para o macoe podem ser criados em menina e como um entra o forma feira municipal do processo de reconhecido com o que não p",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 0,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos tópicos mencionados no prompt. A coerência é inexistente, com frases desconexas e sem sentido. O estilo apresenta algumas palavras em português, mas a construção geral é confusa e pouco compreensível."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_lstm_ep2",
+      "seed": 101,
+      "prompt": "O setor de infraestrutura logistica brasileira debate novas concessoes ferroviarias, cronogramas de duplicacao, metas de produtividade e integracao com portos para desafogar corredores de exportacao.",
+      "output": "8 0 volume 0, número 5 volume 0,9 milhões de litros e outros artigos 0 (o novo livro de thiago) o volume 0 em 0,5% do número de restaurantes do mundo de 0 de agosto de 0 0:0 o programa de engenharia de comunicação e cultura.í de maquineira, 0 anos, o rio de janeiro - 0 anos, é responsável por ele, com o seu computador e um dos pontos que os dependem com a sua apresentação, no início do ano, o que o ano de 0. a equipe do rio de janeiro está com a apresentação de um grupo de 0 anos, a partir das 0h, a agência nacional da sociedade civil (ufs), o grupo da ufcc é de 0,9% de p4, de 0 anos, na capital paulista, o novo parque nacional de administração do brasil (sf), no brasil. com a intenção de verificar o \"bitch of.\" o presidente da justiça, ministro da fazenda, thyli, a partir da quarta-feira, 0,9% em 0, na cidade de rio grande do norte.",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 0,
+        "estilo": 0,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, apresentando informações desconexas e sem relação com o setor de infraestrutura logística. A falta de coerência é evidente, com frases sem sentido e uma estrutura confusa. O estilo é inadequado, com uso excessivo de números e termos que não se conectam de forma lógica."
+      }
+    },
+    {
+      "model": "v2_brwac_20k",
+      "seed": 101,
+      "prompt": "O setor de infraestrutura logistica brasileira debate novas concessoes ferroviarias, cronogramas de duplicacao, metas de produtividade e integracao com portos para desafogar corredores de exportacao.",
+      "output": "\ncomo ter uma tentativa de mortes de tradicionalização de uma base de modo que se interessa a escolha de legislatura e constituinte de uma marca de crime infecto de transporte com a conceitualidade.\nem 0 o regime de vista é que o destaque com o processo de estado com pai a princi",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é irrelevante para o tema proposto, apresentando uma linguagem confusa e desconexa. A falta de clareza e a estrutura fragmentada dificultam a compreensão. Além disso, o vocabulário utilizado não se alinha ao contexto de infraestrutura logística e concessões ferroviárias."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_lstm_ep2",
+      "seed": 105,
+      "prompt": "Uma rede de hospitais privados avalia expansao para telemedicina, protocolos integrados de prontuario, parcerias com seguradoras, capacidade de leitos, gestao de estoque farmacologico e contratacao medica.",
+      "output": "em março de 0, o co2 é um dos melhores equipamentos de tarefa de patrocinadores, que os cofressos são as principais características da região, que já foi o ano de 0,7% para a sua morte. o filme de 0, é um grande valor econômico da revista pulhel, a qual o homem é o de um homem que a misericana e também, para a vida de uma missão. para a mpc, os caxias são usados por eles. de um momento, a terra é uma das maiores características de um mundo, como um grande, pois o segredo é o mais do que a quantidade de energia. de acordo com a reação de débitos e gilmar, a grande maioria dos que atua no mercado de uma forma de que as pessoas estão em alta de 0. é preciso que o pólo de gás é uma das maiores características, a exemplo de que ele passa a ser usado. é possível que o corpo é, é importante que você está bem. \"os que eu não goste, mas é possível a vida de um mundo e não é um dos seus animais. \"nós, \"por exemplo, é a mesma de forma\", que foi assim, \"o futuro\" e de maneira diferente do seu povo. \"não existe como fazer o sistema",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, apresentando informações desconexas e sem relação com telemedicina ou gestão hospitalar. A coerência é severamente comprometida, com frases sem lógica e que não se conectam. O estilo é confuso, com uso inadequado da língua portuguesa e falta de clareza na comunicação."
+      }
+    },
+    {
+      "model": "v2_brwac_20k",
+      "seed": 104,
+      "prompt": "A diretoria de um clube de futebol negocia patrocinio master, reforcos na janela de transferencia, metas de bilheteria, programa de socios e auditoria das contas apos uma temporada irregular nos gramados.",
+      "output": "\no cerca de 0 anos e composição da fila de trabalho no presidente do trabalho de produção e condições de responsável pelo processo de produção de seu primeiro caso de 0 de maio de 0, o ministério de resultados adversários e três anos de previsão e proporcionalidade, a primeira di",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 0,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante e não aborda o tema proposto. A falta de coerência e a estrutura confusa dificultam a compreensão. O uso de termos desconexos e a ausência de um vocabulário adequado comprometem a qualidade do texto."
+      }
+    },
+    {
+      "model": "v2_brwac_20k",
+      "seed": 102,
+      "prompt": "Analistas do mercado financeiro reavaliam previsoes trimestrais para bancos listados, discutem juros, carteira de credito, inadimplencia corporativa e estrategias de hedge diante de volatilidade externa.",
+      "output": "\nnão previsão procedimento da luz a receber como prestação de direitos apresentados por apoio de regimento de alunos de maior produção de registrar a cada dia no processo de uma coisa com continentalidade para ser feita no campo.\né o materialista foi contato ao capitalismo como o",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é irrelevante em relação ao tema proposto, não abordando os tópicos de juros, crédito ou inadimplência. A coerência é comprometida, apresentando frases desconexas e sem lógica. O estilo é inadequado, com uso de vocabulário confuso e falta de clareza na comunicação."
+      }
+    },
+    {
+      "model": "v3_brwac_20k",
+      "seed": 102,
+      "prompt": "Analistas do mercado financeiro reavaliam previsoes trimestrais para bancos listados, discutem juros, carteira de credito, inadimplencia corporativa e estrategias de hedge diante de volatilidade externa.",
+      "output": "\nmenos problemas de uma pergunta de televisão em que traz seus períodos específicos e atendimentos de especialização de produtos de produção de condições para por meio da polícia federal, estejam em que o tipo de composição da contratada apresentou uma política de constituição de",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é irrelevante em relação ao tema proposto, não abordando os tópicos de juros, carteira de crédito ou inadimplência. A coerência é comprometida, apresentando uma estrutura confusa e desconexa. O estilo é inadequado, com uso de vocabulário que não se alinha ao contexto financeiro."
+      }
+    },
+    {
+      "model": "v2_brwac_20k",
+      "seed": 105,
+      "prompt": "Uma rede de hospitais privados avalia expansao para telemedicina, protocolos integrados de prontuario, parcerias com seguradoras, capacidade de leitos, gestao de estoque farmacologico e contratacao medica.",
+      "output": "\numa construção da prova de forma forma da rede mais uma destacar a direita a diretor de aprendizagens para elevação de contratos e mais atenção da capital de lima.\nno campo da constituição da presidente livre do meu número de setembro de 0 e preços de parte da produção do dia 0,",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é irrelevante em relação ao tema proposto, não abordando os aspectos da telemedicina ou gestão hospitalar. A coerência é comprometida, apresentando frases desconexas e sem lógica clara. O estilo é fraco, com repetição de palavras e falta de clareza na comunicação."
+      }
+    },
+    {
+      "model": "v1_brwac_20k",
+      "seed": 101,
+      "prompt": "O setor de infraestrutura logistica brasileira debate novas concessoes ferroviarias, cronogramas de duplicacao, metas de produtividade e integracao com portos para desafogar corredores de exportacao.",
+      "output": "\na matéria e as empresas e do conteúdo de gente como o mundo a contratos e reverter para concentração de encontro de papel e de acordo no estado de ator com a rede de alguns melhores palavras do projeto do seguro de um conteúdo do direito com o povo com a maior de um pacacionaliz",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é irrelevante e não aborda o tema proposto. A falta de coerência e a estrutura confusa dificultam a compreensão. O vocabulário utilizado é inadequado e não se alinha ao contexto do setor de infraestrutura logística."
+      }
+    },
+    {
+      "model": "v4_brwac_subword_v4k_bf_lstm_ep2",
+      "seed": 104,
+      "prompt": "A diretoria de um clube de futebol negocia patrocinio master, reforcos na janela de transferencia, metas de bilheteria, programa de socios e auditoria das contas apos uma temporada irregular nos gramados.",
+      "output": "0 0 o mestre são josé da silva, e o nome da bola do magalhães da silva e, no dia 0 de junho, na noite de ontem, 0 anos de hoje, com o time que foi um grande gol de santana. mas o time foi a primeira etapa do campeonato brasileiro. as três marcas estavam presentes na rua do palmeiras. o grupo é um dia. por fim, o que eu era uma pessoa que foi o que eu estava um pouco com os problemas que se tornam mais de 0 anos.í está na cabeça, em um período de partida que é o time que a trama é muito mal, uma boa alegria, mas o governo do mundo foi levado. ele diz que a cidade do rio é de dois anos, mas acho que o povo, a torcida de bola e a oceano, mas o time, não tenho uma série de torcedores e o trem em casa.",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é completamente irrelevante em relação ao tema proposto, não abordando nenhum dos tópicos mencionados no prompt. A coerência é extremamente baixa, com frases desconexas e falta de lógica. O estilo apresenta problemas significativos, com uso inadequado da língua portuguesa e repetições sem sentido."
+      }
+    },
+    {
+      "model": "v3_brwac_20k",
+      "seed": 104,
+      "prompt": "A diretoria de um clube de futebol negocia patrocinio master, reforcos na janela de transferencia, metas de bilheteria, programa de socios e auditoria das contas apos uma temporada irregular nos gramados.",
+      "output": "\no contrato que está como a proposta de despesas de projetos de serviços de instituição de energia de energia do trabalho e da educação no presidente da cidade de polícia federal e profissionais e paraná a expectativa do contrato de disposição de futebol, na administração do curs",
+      "evaluation": {
+        "relevancia": 0,
+        "coerencia": 1,
+        "estilo": 1,
+        "observacoes": "O texto gerado é irrelevante e não aborda o tema proposto. A falta de coerência é evidente, com frases desconexas e sem lógica. O estilo é confuso, apresentando repetição de palavras e uma estrutura gramatical inadequada."
+      }
+    }
+  ],
+  "summary": {
+    "v3_brwac_20k": {
+      "amostras": 5,
+      "relevancia_media": 0.2,
+      "coerencia_media": 1.0,
+      "estilo_media": 1.0
+    },
+    "v4_brwac_subword_v4k_bf_ep2": {
+      "amostras": 5,
+      "relevancia_media": 0.2,
+      "coerencia_media": 0.8,
+      "estilo_media": 1.0
+    },
+    "v1_brwac_20k": {
+      "amostras": 5,
+      "relevancia_media": 0.0,
+      "coerencia_media": 0.8,
+      "estilo_media": 1.0
+    },
+    "v4_brwac_subword_v4k_bf_lstm_ep2": {
+      "amostras": 5,
+      "relevancia_media": 0.0,
+      "coerencia_media": 0.4,
+      "estilo_media": 0.6
+    },
+    "v2_brwac_20k": {
+      "amostras": 5,
+      "relevancia_media": 0.0,
+      "coerencia_media": 0.8,
+      "estilo_media": 1.0
+    }
+  }
+}

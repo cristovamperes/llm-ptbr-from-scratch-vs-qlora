@@ -1,0 +1,82 @@
+{
+  "model_key": "v6_brwac_transformer_v6_long",
+  "tokenizer": "versions/v6-release-candidate/tokenizers/unigram_16k/spm_v6.model",
+  "thresholds": {
+    "max_fallback_ratio": 0.05,
+    "max_short_piece_ratio": 0.12
+  },
+  "aggregate": {
+    "model_key": "v6_brwac_transformer_v6_long",
+    "samples_count": 5,
+    "total_tokens": 1507,
+    "total_chars": 7867,
+    "avg_tokens_per_sample": 301.4,
+    "avg_chars_per_sample": 1573.4,
+    "fallback_tokens": 0,
+    "fallback_ratio": 0.0,
+    "short_alpha_tokens": 173,
+    "short_alpha_ratio": 0.11479761114797611
+  },
+  "per_sample": [
+    {
+      "seed": 101,
+      "token_count": 306,
+      "char_count": 1498,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 42,
+      "short_alpha_ratio": 0.13725490196078433
+    },
+    {
+      "seed": 102,
+      "token_count": 299,
+      "char_count": 1652,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 27,
+      "short_alpha_ratio": 0.0903010033444816
+    },
+    {
+      "seed": 103,
+      "token_count": 301,
+      "char_count": 1540,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 33,
+      "short_alpha_ratio": 0.10963455149501661
+    },
+    {
+      "seed": 104,
+      "token_count": 304,
+      "char_count": 1587,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 42,
+      "short_alpha_ratio": 0.13815789473684212
+    },
+    {
+      "seed": 105,
+      "token_count": 297,
+      "char_count": 1590,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 29,
+      "short_alpha_ratio": 0.09764309764309764
+    }
+  ],
+  "passes": false,
+  "violations": [
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": 101,
+      "value": 0.13725490196078433,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": 104,
+      "value": 0.13815789473684212,
+      "threshold": 0.12
+    }
+  ]
+}

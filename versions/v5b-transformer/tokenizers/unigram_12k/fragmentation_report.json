@@ -1,0 +1,11 @@
+{
+  "tokenizer": "versions/v5b-transformer/tokenizers/unigram_12k/spm_v5b.model",
+  "docs": 2000,
+  "total_tokens": 1627374,
+  "avg_tokens_per_doc": 813.687,
+  "tokens_per_char_ratio": 0.33584391366564403,
+  "byte_fallback_tokens": 75951,
+  "byte_fallback_ratio": 0.04667089433652006,
+  "short_alpha_pieces": 385945,
+  "short_alpha_ratio": 0.23715814557686185
+}

@@ -1,0 +1,114 @@
+{
+  "timestamps": {
+    "started_at": "2025-10-19 12:52:56",
+    "ended_at": "2025-10-19 14:02:30",
+    "elapsed_sec": 4174.4677176475525
+  },
+  "env": {
+    "python": "3.10.12",
+    "tensorflow": "2.20.0",
+    "os": "Linux-5.15.0-142-generic-x86_64-with-glibc2.35",
+    "cpu": "x86_64",
+    "cpu_count": 64,
+    "gpu_devices": [
+      "NVIDIA GeForce RTX 3080"
+    ]
+  },
+  "dataset": {
+    "tokenization": "subword",
+    "train_docs": 20000,
+    "val_docs": 2000,
+    "min_len": 200,
+    "train_chars": 43364793,
+    "val_chars": 4337911,
+    "avg_train_chars_per_doc": 2168.23965,
+    "avg_val_chars_per_doc": 2168.9555,
+    "train_tokens": 12471733,
+    "val_tokens": 1249720,
+    "avg_train_tokens_per_doc": 623.58665,
+    "avg_val_tokens_per_doc": 624.86
+  },
+  "cleaning": {
+    "lowercase": true,
+    "end_inline_sep": "newline",
+    "min_line_chars": 40,
+    "min_alpha_ratio": 0.4,
+    "normalize_numbers": true,
+    "drop_uppercase_metadata": true
+  },
+  "train_config": {
+    "arch": "v4",
+    "tokenization": "subword",
+    "epocas": 2,
+    "batch_size": 256,
+    "tamanho_sequencia": 192,
+    "tamanho_lstm": 256,
+    "batch_log_freq": 500,
+    "seed": 42,
+    "embedding_dim": 512,
+    "stride": 2,
+    "shuffle_buffer": 200000,
+    "dropout": 0.1,
+    "recurrent_dropout": 0.0,
+    "clipnorm": 1.0,
+    "rnn_units": [
+      512,
+      512
+    ],
+    "rnn_type": "gru",
+    "final_dropout": 0.1,
+    "tokenizer_path": "/root/TCC_v4/versions/v4-subword-lstm/tokenizer/spm_v4.model",
+    "vocab_size_expected": 3200,
+    "subword_add_bos": true,
+    "subword_add_eos": true
+  },
+  "model": {
+    "vocab_size": 3200,
+    "sequence_length": 192,
+    "tamanho_sequencia": 192,
+    "rnn_units": [
+      512,
+      512
+    ],
+    "rnn_type": "gru",
+    "batch_size": 256,
+    "stride": 2,
+    "train_windows": 6235770,
+    "val_windows": 624764,
+    "train_windows_est": 6235770,
+    "val_windows_est": 624764,
+    "tokens_per_epoch_est": 1197267840,
+    "train_batches": 24359,
+    "val_batches": 2441,
+    "dropout": 0.1,
+    "recurrent_dropout": 0.0,
+    "final_dropout": 0.1,
+    "params": 6431872,
+    "tokenizer_model": "/root/TCC_v4/versions/v4-subword-lstm/tokenizer/spm_v4.model",
+    "train_tokens": 12471733,
+    "val_tokens": 1249720
+  },
+  "artifacts": {
+    "modelo": "versions/v4-subword-lstm/models/modelo_brwac_v4_subword.keras",
+    "mapeamentos": "versions/v4-subword-lstm/mappings/mapeamentos_brwac_v4.pkl",
+    "csv_history": "versions/v4-subword-lstm/logs/history_20251019_125211.csv",
+    "batch_log": "versions/v4-subword-lstm/logs/batches_20251019_125211.log"
+  },
+  "performance": {
+    "elapsed_sec": 4174.4677176475525,
+    "elapsed_per_epoch_sec": 2087.2338588237762,
+    "train_windows_total": 12471540,
+    "tokens_per_epoch_est": 1197267840,
+    "tokens_total_est": 2394535680,
+    "windows_per_sec": 2987.5761039608938,
+    "tokens_per_sec": 573614.6119604916,
+    "train_tokens_total": 12471733,
+    "val_tokens_total": 1249720,
+    "approx_flops_per_token_train": 28752000.0,
+    "approx_total_flops_train": 6.884768987136e+16,
+    "approx_total_tflops_train": 68847.68987136
+  },
+  "git": {
+    "commit": ""
+  }
+}

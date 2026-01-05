@@ -1,0 +1,8 @@
+﻿# Snapshot público (Trilha 2)
+# - Inclui datasets pequenos (JSONL) e estatísticas (JSON) para auditoria/reprodução.
+# - Mantém fora do controle de versão outputs/adapters e logs verbosos.
+outputs/
+logs/*.log
+logs/*.out
+__pycache__/
+*.pyc

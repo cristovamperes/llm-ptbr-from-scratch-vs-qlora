@@ -1,0 +1,93 @@
+{
+  "model_key": "v6_brwac_transformer_v6_rc16k_v5b",
+  "tokenizer": "versions/v6-release-candidate/tokenizers/unigram_16k/spm_v6.model",
+  "thresholds": {
+    "max_fallback_ratio": 0.03,
+    "max_short_piece_ratio": 0.12
+  },
+  "aggregate": {
+    "model_key": "v6_brwac_transformer_v6_rc16k_v5b",
+    "samples_count": 5,
+    "total_tokens": 1496,
+    "total_chars": 7658,
+    "avg_tokens_per_sample": 299.2,
+    "avg_chars_per_sample": 1531.6,
+    "fallback_tokens": 0,
+    "fallback_ratio": 0.0,
+    "short_alpha_tokens": 192,
+    "short_alpha_ratio": 0.12834224598930483
+  },
+  "per_sample": [
+    {
+      "seed": 101,
+      "token_count": 303,
+      "char_count": 1450,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 50,
+      "short_alpha_ratio": 0.16501650165016502
+    },
+    {
+      "seed": 102,
+      "token_count": 298,
+      "char_count": 1601,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 34,
+      "short_alpha_ratio": 0.11409395973154363
+    },
+    {
+      "seed": 103,
+      "token_count": 298,
+      "char_count": 1506,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 37,
+      "short_alpha_ratio": 0.12416107382550336
+    },
+    {
+      "seed": 104,
+      "token_count": 305,
+      "char_count": 1575,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 43,
+      "short_alpha_ratio": 0.14098360655737704
+    },
+    {
+      "seed": 105,
+      "token_count": 292,
+      "char_count": 1526,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 28,
+      "short_alpha_ratio": 0.0958904109589041
+    }
+  ],
+  "passes": false,
+  "violations": [
+    {
+      "type": "aggregate_short_piece_ratio",
+      "value": 0.12834224598930483,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": 101,
+      "value": 0.16501650165016502,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": 103,
+      "value": 0.12416107382550336,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": 104,
+      "value": 0.14098360655737704,
+      "threshold": 0.12
+    }
+  ]
+}

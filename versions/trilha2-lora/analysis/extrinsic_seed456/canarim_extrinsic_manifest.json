@@ -1,0 +1,28 @@
+{
+  "dataset": "dominguesm/Canarim-Instruct-PTBR-Dataset",
+  "split": "train",
+  "seed": 456,
+  "n_per_task_requested": 200,
+  "n_per_task_obtained": {
+    "qa": 200,
+    "summarization": 200,
+    "rewriting": 200
+  },
+  "scanned_examples": 28410,
+  "exclude_jsonl": [
+    "versions/trilha2-lora/datasets/canarim_sft_10k_train.jsonl",
+    "versions/trilha2-lora/datasets/canarim_sft_10k_val.jsonl",
+    "versions/trilha2-lora/datasets/canarim_sft_10k_test.jsonl"
+  ],
+  "out_dir": "versions/trilha2-lora/analysis/extrinsic_seed456",
+  "filters": {
+    "qa": "out_len<=12 and (contains '?' or options)",
+    "summarization": "keywords OR long input with shorter output",
+    "rewriting": "keywords OR similar length (heuristic)"
+  },
+  "files": {
+    "qa": "versions/trilha2-lora/analysis/extrinsic_seed456/canarim_extrinsic_qa.jsonl",
+    "summarization": "versions/trilha2-lora/analysis/extrinsic_seed456/canarim_extrinsic_summarization.jsonl",
+    "rewriting": "versions/trilha2-lora/analysis/extrinsic_seed456/canarim_extrinsic_rewriting.jsonl"
+  }
+}

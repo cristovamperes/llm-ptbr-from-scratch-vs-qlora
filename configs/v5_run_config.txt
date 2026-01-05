@@ -1,0 +1,4 @@
+steps_per_epoch=41653
+batch_size=192
+seq_len=320
+shuffle_buffer=400000

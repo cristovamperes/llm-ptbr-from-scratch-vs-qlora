@@ -1,0 +1,29 @@
+# Nucleo de ML
+tensorflow>=2.14
+numpy>=1.24
+
+# Tokenizacao subword
+sentencepiece>=0.1.99
+
+# Datasets (Hugging Face) para v3
+datasets>=2.18
+
+# Dependencias centrais do datasets (util se usar --no-deps)
+pandas>=2.0
+pyarrow>=21.0.0
+xxhash>=3.0.0
+dill>=0.3.0,<0.4.1
+multiprocess<0.70.17
+fsspec>=2023.1.0
+huggingface_hub>=0.22.0
+requests>=2.31.0
+tqdm>=4.65.0
+packaging>=23.1
+pyyaml>=6.0
+
+# Avaliação via APIs externas (LLMs SOTA)
+openai>=1.40.0
+
+# Notebooks
+jupyter>=1.0
+ipykernel>=6.29

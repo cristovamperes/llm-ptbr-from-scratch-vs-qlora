@@ -1,0 +1,99 @@
+{
+  "model_key": "v5_brwac_transformer_v5b_long",
+  "tokenizer": "versions\\v5b-transformer\\tokenizers\\unigram_12k\\spm_v5b.model",
+  "thresholds": {
+    "max_fallback_ratio": 0.03,
+    "max_short_piece_ratio": 0.12
+  },
+  "aggregate": {
+    "model_key": "v5_brwac_transformer_v5b_long",
+    "samples_count": 5,
+    "total_tokens": 1390,
+    "total_chars": 4934,
+    "avg_tokens_per_sample": 278.0,
+    "avg_chars_per_sample": 986.8,
+    "fallback_tokens": 0,
+    "fallback_ratio": 0.0,
+    "short_alpha_tokens": 190,
+    "short_alpha_ratio": 0.1366906474820144
+  },
+  "per_sample": [
+    {
+      "seed": -1,
+      "token_count": 275,
+      "char_count": 957,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 50,
+      "short_alpha_ratio": 0.18181818181818182
+    },
+    {
+      "seed": -1,
+      "token_count": 274,
+      "char_count": 1019,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 36,
+      "short_alpha_ratio": 0.13138686131386862
+    },
+    {
+      "seed": -1,
+      "token_count": 285,
+      "char_count": 962,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 53,
+      "short_alpha_ratio": 0.18596491228070175
+    },
+    {
+      "seed": -1,
+      "token_count": 277,
+      "char_count": 898,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 35,
+      "short_alpha_ratio": 0.1263537906137184
+    },
+    {
+      "seed": -1,
+      "token_count": 279,
+      "char_count": 1098,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 16,
+      "short_alpha_ratio": 0.05734767025089606
+    }
+  ],
+  "passes": false,
+  "violations": [
+    {
+      "type": "aggregate_short_piece_ratio",
+      "value": 0.1366906474820144,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": -1,
+      "value": 0.18181818181818182,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": -1,
+      "value": 0.13138686131386862,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": -1,
+      "value": 0.18596491228070175,
+      "threshold": 0.12
+    },
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": -1,
+      "value": 0.1263537906137184,
+      "threshold": 0.12
+    }
+  ]
+}

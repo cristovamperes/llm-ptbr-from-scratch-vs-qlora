@@ -1,0 +1,27 @@
+{
+  "dataset": "nlpufg/brwac",
+  "split": "train",
+  "seed": 42,
+  "requested_docs": 10000,
+  "streaming": true,
+  "shuffle_buffer_size": 200000,
+  "raw_docs_scanned": 11620,
+  "kept_docs": 10000,
+  "min_doc_chars": 200,
+  "cleaning": {
+    "lowercase": false,
+    "end_inline_sep": "newline",
+    "min_line_chars": 80,
+    "min_alpha_ratio": 0.6,
+    "normalize_numbers": false,
+    "drop_uppercase_metadata": false
+  },
+  "chars": {
+    "avg": 2209.6555,
+    "min": 200,
+    "max": 326356
+  },
+  "artifacts": {
+    "jsonl": "versions/trilha2-lora/datasets/brwac_cpt_10k.jsonl"
+  }
+}

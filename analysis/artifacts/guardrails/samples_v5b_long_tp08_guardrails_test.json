@@ -1,0 +1,69 @@
+{
+  "model_key": "v5b_long_manual",
+  "tokenizer": "versions\\v5b-transformer\\tokenizers\\unigram_40k\\spm_v5b.model",
+  "thresholds": {
+    "max_fallback_ratio": 0.03,
+    "max_short_piece_ratio": 0.12
+  },
+  "aggregate": {
+    "model_key": "v5b_long_manual",
+    "samples_count": 5,
+    "total_tokens": 889,
+    "total_chars": 4306,
+    "avg_tokens_per_sample": 177.8,
+    "avg_chars_per_sample": 861.2,
+    "fallback_tokens": 0,
+    "fallback_ratio": 0.0,
+    "short_alpha_tokens": 54,
+    "short_alpha_ratio": 0.06074240719910011
+  },
+  "per_sample": [
+    {
+      "seed": -1,
+      "token_count": 206,
+      "char_count": 1055,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 8,
+      "short_alpha_ratio": 0.038834951456310676
+    },
+    {
+      "seed": -1,
+      "token_count": 216,
+      "char_count": 975,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 19,
+      "short_alpha_ratio": 0.08796296296296297
+    },
+    {
+      "seed": -1,
+      "token_count": 163,
+      "char_count": 895,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 3,
+      "short_alpha_ratio": 0.018404907975460124
+    },
+    {
+      "seed": -1,
+      "token_count": 79,
+      "char_count": 368,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 6,
+      "short_alpha_ratio": 0.0759493670886076
+    },
+    {
+      "seed": -1,
+      "token_count": 225,
+      "char_count": 1013,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 18,
+      "short_alpha_ratio": 0.08
+    }
+  ],
+  "passes": true,
+  "violations": []
+}

@@ -1,0 +1,6 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.89s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.26s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:13<00:04,  4.42s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  2.79s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:13<00:00,  3.33s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:11,  3.74s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.13s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:12<00:04,  4.18s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  2.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:12<00:00,  3.17s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[OK] Wrote: /workspace/TCC/versions/trilha2-lora/analysis/eval_trilha2_extrinsic.json
+[OK] Details: /workspace/TCC/versions/trilha2-lora/analysis/eval_trilha2_extrinsic_details.jsonl

@@ -1,0 +1,37 @@
+### uname -a
+Linux d938182b0f25 5.15.0-143-generic #153-Ubuntu SMP Fri Jun 13 19:10:45 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+### nvidia-smi -L
+GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-5963ac85-bcb8-4450-1ba5-6bcc31191d2b)
+
+### nvidia-smi
+Sat Dec 27 21:37:54 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.95.05              Driver Version: 580.95.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4090        On  |   00000000:01:00.0 Off |                  Off |
+|  0%   38C    P8             13W /  450W |       1MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+### python3 -V
+Python 3.10.12
+
+### pip3 -V
+pip 25.3 from /usr/local/lib/python3.10/dist-packages/pip (python 3.10)
+
+### huggingface-cli whoami
+[33m⚠️  Warning: 'huggingface-cli whoami' is deprecated. Use 'hf auth whoami' instead.[0m
+ouch7949

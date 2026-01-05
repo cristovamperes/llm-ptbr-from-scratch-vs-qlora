@@ -1,0 +1,481 @@
+2025-10-19 19:17:55.723060: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[INFO] Carregando dataset BrWaC (split 'train')...
+[INFO] Dataset carregado com 3530808 exemplos
+[INFO] Split -> train: 3177727 | val: 353081
+[INFO] Processados 5000 textos...
+[INFO] Processados 10000 textos...
+[INFO] Processados 15000 textos...
+[INFO] Processados 20000 textos...
+[INFO] Treino: 20000 docs | Val: 2000 docs
+2025-10-19 19:19:10.829382: E tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:55] The TF_FORCE_GPU_ALLOW_GROWTH environment variable is set but could not be parsed: "1". Valid values are "true" or "false". Using original config value of 0.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1760901550.829434   68970 gpu_process_state.cc:208] Using CUDA malloc Async allocator for GPU: 0
+I0000 00:00:1760901550.830796   68970 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 8128 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3080, pci bus id: 0000:02:00.0, compute capability: 8.6
+Epoch 1/6
+2025-10-19 19:19:28.811573: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 39492 of 200000
+2025-10-19 19:19:48.811843: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 123166 of 200000
+2025-10-19 19:20:07.222125: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+2025-10-19 19:20:09.389210: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 90300
+batch 0 - loss 8.0709
+batch 500 - loss 6.5379
+batch 1000 - loss 6.1950
+batch 1500 - loss 5.9678
+batch 2000 - loss 5.7961
+batch 2500 - loss 5.6635
+batch 3000 - loss 5.5579
+batch 3500 - loss 5.4699
+batch 4000 - loss 5.3962
+batch 4500 - loss 5.3351
+batch 5000 - loss 5.2782
+batch 5500 - loss 5.2098
+batch 6000 - loss 5.1580
+batch 6500 - loss 5.1122
+batch 7000 - loss 5.0743
+batch 7500 - loss 5.0441
+batch 8000 - loss 5.0180
+batch 8500 - loss 4.9952
+batch 9000 - loss 4.9743
+batch 9500 - loss 4.9543
+batch 10000 - loss 4.9357
+batch 10500 - loss 4.9176
+batch 11000 - loss 4.9005
+batch 11500 - loss 4.8852
+batch 12000 - loss 4.8712
+batch 12500 - loss 4.8571
+batch 13000 - loss 4.8442
+batch 13500 - loss 4.8318
+batch 14000 - loss 4.8199
+batch 14500 - loss 4.8089
+batch 15000 - loss 4.7991
+batch 15500 - loss 4.7882
+batch 16000 - loss 4.7784
+batch 16500 - loss 4.7684
+batch 17000 - loss 4.7598
+batch 17500 - loss 4.7510
+batch 18000 - loss 4.7418
+batch 18500 - loss 4.7331
+batch 19000 - loss 4.7250
+batch 19500 - loss 4.7174
+batch 20000 - loss 4.7098
+batch 20500 - loss 4.7025
+batch 21000 - loss 4.6953
+batch 21500 - loss 4.6880
+batch 22000 - loss 4.6807
+batch 22500 - loss 4.6744
+batch 23000 - loss 4.6682
+batch 23500 - loss 4.6622
+batch 24000 - loss 4.6563
+batch 24500 - loss 4.6510
+batch 25000 - loss 4.6452
+batch 25500 - loss 4.6401
+batch 26000 - loss 4.6344
+batch 26500 - loss 4.6290
+batch 27000 - loss 4.6237
+batch 27500 - loss 4.6187
+batch 28000 - loss 4.6135
+batch 28500 - loss 4.6089
+batch 29000 - loss 4.6046
+batch 29500 - loss 4.6004
+batch 30000 - loss 4.5958
+batch 30500 - loss 4.5917
+batch 31000 - loss 4.5874
+batch 31500 - loss 4.5829
+batch 32000 - loss 4.5781
+2025-10-19 19:53:26.876263: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+	 [[{{node IteratorGetNext}}]]
+2025-10-19 19:53:26.876357: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+	 [[{{node IteratorGetNext}}]]
+	 [[IteratorGetNext/_4]]
+2025-10-19 19:53:26.876395: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 6739762755643223687
+/root/TCC_v4/.venv/lib/python3.10/site-packages/keras/src/trainers/epoch_iterator.py:164: UserWarning: Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches. You may need to use the `.repeat()` function when building your dataset.
+  self._interrupted_warning()
+2025-10-19 19:56:05.927986: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+	 [[{{node IteratorGetNext}}]]
+	 [[IteratorGetNext/_4]]
+2025-10-19 19:56:05.928086: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7461160694917425721
+2025-10-19 19:56:05.928116: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 16716683982969385044
+2025-10-19 19:56:05.928130: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7305088996801028918
+32478/32478 - 2210s - 68ms/step - accuracy: 0.2086 - loss: 4.5736 - val_accuracy: 0.2320 - val_loss: 4.3209 - learning_rate: 1.0000e-03
+Epoch 2/6
+2025-10-19 19:56:16.482761: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 41958 of 200000
+2025-10-19 19:56:26.482845: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 82910 of 200000
+2025-10-19 19:56:36.482998: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 125566 of 200000
+2025-10-19 19:56:53.849199: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+batch 0 - loss 4.4671
+batch 500 - loss 4.3499
+batch 1000 - loss 4.3243
+batch 1500 - loss 4.3265
+batch 2000 - loss 4.3219
+batch 2500 - loss 4.3148
+batch 3000 - loss 4.3116
+batch 3500 - loss 4.3091
+batch 4000 - loss 4.3090
+batch 4500 - loss 4.3100
+batch 5000 - loss 4.3057
+batch 5500 - loss 4.2832
+batch 6000 - loss 4.2702
+batch 6500 - loss 4.2620
+batch 7000 - loss 4.2576
+batch 7500 - loss 4.2559
+batch 8000 - loss 4.2554
+batch 8500 - loss 4.2578
+batch 9000 - loss 4.2598
+batch 9500 - loss 4.2612
+batch 10000 - loss 4.2623
+batch 10500 - loss 4.2616
+batch 11000 - loss 4.2623
+batch 11500 - loss 4.2634
+batch 12000 - loss 4.2649
+batch 12500 - loss 4.2650
+batch 13000 - loss 4.2650
+batch 13500 - loss 4.2653
+batch 14000 - loss 4.2655
+batch 14500 - loss 4.2660
+batch 15000 - loss 4.2666
+batch 15500 - loss 4.2662
+batch 16000 - loss 4.2662
+batch 16500 - loss 4.2660
+batch 17000 - loss 4.2661
+batch 17500 - loss 4.2653
+batch 18000 - loss 4.2642
+batch 18500 - loss 4.2639
+batch 19000 - loss 4.2632
+batch 19500 - loss 4.2626
+batch 20000 - loss 4.2619
+batch 20500 - loss 4.2611
+batch 21000 - loss 4.2602
+batch 21500 - loss 4.2590
+batch 22000 - loss 4.2579
+batch 22500 - loss 4.2567
+batch 23000 - loss 4.2560
+batch 23500 - loss 4.2554
+batch 24000 - loss 4.2549
+batch 24500 - loss 4.2543
+batch 25000 - loss 4.2538
+batch 25500 - loss 4.2532
+batch 26000 - loss 4.2521
+batch 26500 - loss 4.2511
+batch 27000 - loss 4.2501
+batch 27500 - loss 4.2492
+batch 28000 - loss 4.2483
+batch 28500 - loss 4.2477
+batch 29000 - loss 4.2469
+batch 29500 - loss 4.2466
+batch 30000 - loss 4.2457
+batch 30500 - loss 4.2450
+batch 31000 - loss 4.2442
+batch 31500 - loss 4.2431
+batch 32000 - loss 4.2417
+2025-10-19 20:30:02.734533: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 6739762755643223687
+2025-10-19 20:32:38.359525: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+	 [[{{node IteratorGetNext}}]]
+	 [[IteratorGetNext/_4]]
+2025-10-19 20:32:38.359626: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7461160694917425721
+2025-10-19 20:32:38.359648: I tensorflow/core/framework/local_rendezvous.cc:430] Local rendezvous send item cancelled. Key hash: 15771382824654941063
+2025-10-19 20:32:38.359698: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 16716683982969385044
+2025-10-19 20:32:38.359715: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7305088996801028918
+32478/32478 - 2192s - 68ms/step - accuracy: 0.2439 - loss: 4.2400 - val_accuracy: 0.2447 - val_loss: 4.2120 - learning_rate: 1.0000e-03
+Epoch 3/6
+2025-10-19 20:32:49.056713: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 44939 of 200000
+2025-10-19 20:32:59.056857: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 89478 of 200000
+2025-10-19 20:33:19.056675: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 177440 of 200000
+2025-10-19 20:33:24.592109: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+batch 0 - loss 4.4793
+batch 500 - loss 4.2211
+batch 1000 - loss 4.2001
+batch 1500 - loss 4.1970
+batch 2000 - loss 4.1920
+batch 2500 - loss 4.1887
+batch 3000 - loss 4.1851
+batch 3500 - loss 4.1827
+batch 4000 - loss 4.1815
+batch 4500 - loss 4.1834
+batch 5000 - loss 4.1811
+batch 5500 - loss 4.1608
+batch 6000 - loss 4.1485
+batch 6500 - loss 4.1431
+batch 7000 - loss 4.1388
+batch 7500 - loss 4.1378
+batch 8000 - loss 4.1390
+batch 8500 - loss 4.1414
+batch 9000 - loss 4.1441
+batch 9500 - loss 4.1456
+batch 10000 - loss 4.1460
+batch 10500 - loss 4.1460
+batch 11000 - loss 4.1470
+batch 11500 - loss 4.1486
+batch 12000 - loss 4.1505
+batch 12500 - loss 4.1515
+batch 13000 - loss 4.1521
+batch 13500 - loss 4.1528
+batch 14000 - loss 4.1531
+batch 14500 - loss 4.1544
+batch 15000 - loss 4.1551
+batch 15500 - loss 4.1553
+batch 16000 - loss 4.1556
+batch 16500 - loss 4.1559
+batch 17000 - loss 4.1563
+batch 17500 - loss 4.1561
+batch 18000 - loss 4.1551
+batch 18500 - loss 4.1549
+batch 19000 - loss 4.1549
+batch 19500 - loss 4.1548
+batch 20000 - loss 4.1548
+batch 20500 - loss 4.1542
+batch 21000 - loss 4.1535
+batch 21500 - loss 4.1523
+batch 22000 - loss 4.1513
+batch 22500 - loss 4.1505
+batch 23000 - loss 4.1500
+batch 23500 - loss 4.1496
+batch 24000 - loss 4.1492
+batch 24500 - loss 4.1493
+batch 25000 - loss 4.1492
+batch 25500 - loss 4.1486
+batch 26000 - loss 4.1479
+batch 26500 - loss 4.1471
+batch 27000 - loss 4.1462
+batch 27500 - loss 4.1456
+batch 28000 - loss 4.1462
+batch 28500 - loss 4.1479
+batch 29000 - loss 4.1501
+batch 29500 - loss 4.1520
+batch 30000 - loss 4.1531
+batch 30500 - loss 4.1541
+batch 31000 - loss 4.1546
+batch 31500 - loss 4.1545
+batch 32000 - loss 4.1542
+2025-10-19 21:09:04.426444: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7461160694917425721
+2025-10-19 21:09:04.426553: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 16716683982969385044
+2025-10-19 21:09:04.426574: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7305088996801028918
+32478/32478 - 2186s - 67ms/step - accuracy: 0.2526 - loss: 4.1535 - val_accuracy: 0.2486 - val_loss: 4.1791 - learning_rate: 1.0000e-03
+Epoch 4/6
+2025-10-19 21:09:14.881858: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 43788 of 200000
+2025-10-19 21:09:34.881845: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 127624 of 200000
+2025-10-19 21:09:52.281594: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+batch 0 - loss 4.3710
+batch 500 - loss 4.1707
+batch 1000 - loss 4.1502
+batch 1500 - loss 4.1474
+batch 2000 - loss 4.1389
+batch 2500 - loss 4.1358
+batch 3000 - loss 4.1329
+batch 3500 - loss 4.1334
+batch 4000 - loss 4.1315
+batch 4500 - loss 4.1312
+batch 5000 - loss 4.1266
+batch 5500 - loss 4.1058
+batch 6000 - loss 4.0934
+batch 6500 - loss 4.0869
+batch 7000 - loss 4.0830
+batch 7500 - loss 4.0825
+batch 8000 - loss 4.0843
+batch 8500 - loss 4.0868
+batch 9000 - loss 4.0898
+batch 9500 - loss 4.0926
+batch 10000 - loss 4.0945
+batch 10500 - loss 4.0950
+batch 11000 - loss 4.0961
+batch 11500 - loss 4.0982
+batch 12000 - loss 4.1001
+batch 12500 - loss 4.1003
+batch 13000 - loss 4.1011
+batch 13500 - loss 4.1019
+batch 14000 - loss 4.1025
+batch 14500 - loss 4.1033
+batch 15000 - loss 4.1047
+batch 15500 - loss 4.1049
+batch 16000 - loss 4.1052
+batch 16500 - loss 4.1058
+batch 17000 - loss 4.1065
+batch 17500 - loss 4.1062
+batch 18000 - loss 4.1053
+batch 18500 - loss 4.1049
+batch 19000 - loss 4.1043
+batch 19500 - loss 4.1043
+batch 20000 - loss 4.1043
+batch 20500 - loss 4.1036
+batch 21000 - loss 4.1029
+batch 21500 - loss 4.1019
+batch 22000 - loss 4.1011
+batch 22500 - loss 4.1004
+batch 23000 - loss 4.0994
+batch 23500 - loss 4.0997
+batch 24000 - loss 4.0990
+batch 24500 - loss 4.0987
+batch 25000 - loss 4.0983
+batch 25500 - loss 4.0980
+batch 26000 - loss 4.0974
+batch 26500 - loss 4.0965
+batch 27000 - loss 4.0959
+batch 27500 - loss 4.0958
+batch 28000 - loss 4.0976
+batch 28500 - loss 4.1012
+batch 29000 - loss 4.1050
+batch 29500 - loss 4.1081
+batch 30000 - loss 4.1103
+batch 30500 - loss 4.1121
+batch 31000 - loss 4.1133
+batch 31500 - loss 4.1136
+batch 32000 - loss 4.1136
+2025-10-19 21:42:55.470862: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 6739762755643223687
+2025-10-19 21:45:26.902331: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+	 [[{{node IteratorGetNext}}]]
+	 [[IteratorGetNext/_4]]
+2025-10-19 21:45:26.902480: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7461160694917425721
+2025-10-19 21:45:26.902519: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 16716683982969385044
+2025-10-19 21:45:26.902534: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7305088996801028918
+32478/32478 - 2183s - 67ms/step - accuracy: 0.2565 - loss: 4.1133 - val_accuracy: 0.2509 - val_loss: 4.1565 - learning_rate: 1.0000e-03
+Epoch 5/6
+2025-10-19 21:45:37.648778: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 44925 of 200000
+2025-10-19 21:45:47.648959: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 87687 of 200000
+2025-10-19 21:46:07.648960: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 172066 of 200000
+2025-10-19 21:46:14.507070: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+batch 0 - loss 4.3992
+batch 500 - loss 4.1482
+batch 1000 - loss 4.1259
+batch 1500 - loss 4.1195
+batch 2000 - loss 4.1124
+batch 2500 - loss 4.1077
+batch 3000 - loss 4.1033
+batch 3500 - loss 4.1021
+batch 4000 - loss 4.0997
+batch 4500 - loss 4.1010
+batch 5000 - loss 4.0967
+batch 5500 - loss 4.0768
+batch 6000 - loss 4.0641
+batch 6500 - loss 4.0563
+batch 7000 - loss 4.0527
+batch 7500 - loss 4.0541
+batch 8000 - loss 4.0556
+batch 8500 - loss 4.0587
+batch 9000 - loss 4.0610
+batch 9500 - loss 4.0633
+batch 10000 - loss 4.0644
+batch 10500 - loss 4.0653
+batch 11000 - loss 4.0674
+batch 11500 - loss 4.0695
+batch 12000 - loss 4.0718
+batch 12500 - loss 4.0731
+batch 13000 - loss 4.0735
+batch 13500 - loss 4.0742
+batch 14000 - loss 4.0746
+batch 14500 - loss 4.0753
+batch 15000 - loss 4.0764
+batch 15500 - loss 4.0763
+batch 16000 - loss 4.0765
+batch 16500 - loss 4.0769
+batch 17000 - loss 4.0767
+batch 17500 - loss 4.0768
+batch 18000 - loss 4.0756
+batch 18500 - loss 4.0751
+batch 19000 - loss 4.0746
+batch 19500 - loss 4.0746
+batch 20000 - loss 4.0738
+batch 20500 - loss 4.0729
+batch 21000 - loss 4.0721
+batch 21500 - loss 4.0709
+batch 22000 - loss 4.0696
+batch 22500 - loss 4.0687
+batch 23000 - loss 4.0683
+batch 23500 - loss 4.0679
+batch 24000 - loss 4.0680
+batch 24500 - loss 4.0678
+batch 25000 - loss 4.0672
+batch 25500 - loss 4.0664
+batch 26000 - loss 4.0656
+batch 26500 - loss 4.0651
+batch 27000 - loss 4.0646
+batch 27500 - loss 4.0649
+batch 28000 - loss 4.0673
+batch 28500 - loss 4.0726
+batch 29000 - loss 4.0786
+batch 29500 - loss 4.0853
+batch 30000 - loss 4.0945
+batch 30500 - loss 4.1071
+batch 31000 - loss 4.1228
+batch 31500 - loss 4.1409
+batch 32000 - loss 4.1572
+2025-10-19 22:19:16.972610: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 6739762755643223687
+2025-10-19 22:21:50.098721: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7461160694917425721
+2025-10-19 22:21:50.098840: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 16716683982969385044
+2025-10-19 22:21:50.098864: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7305088996801028918
+32478/32478 - 2183s - 67ms/step - accuracy: 0.2501 - loss: 4.1720 - val_accuracy: 0.1617 - val_loss: 4.9774 - learning_rate: 1.0000e-03
+Epoch 6/6
+2025-10-19 22:22:00.169843: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 44585 of 200000
+2025-10-19 22:22:10.169970: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 90287 of 200000
+2025-10-19 22:22:20.170027: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:453] ShuffleDatasetV3:4: Filling up shuffle buffer (this may take a while): 134087 of 200000
+2025-10-19 22:22:35.317840: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:483] Shuffle buffer filled.
+batch 0 - loss 5.3620
+batch 500 - loss 5.1601
+batch 1000 - loss 5.1310
+batch 1500 - loss 5.1211
+batch 2000 - loss 5.1127
+batch 2500 - loss 5.1009
+batch 3000 - loss 5.0911
+batch 3500 - loss 5.0839
+batch 4000 - loss 5.0759
+batch 4500 - loss 5.0696
+batch 5000 - loss 5.0648
+batch 5500 - loss 5.0420
+batch 6000 - loss 5.0277
+batch 6500 - loss 5.0172
+batch 7000 - loss 5.0105
+batch 7500 - loss 5.0071
+batch 8000 - loss 5.0044
+batch 8500 - loss 5.0024
+batch 9000 - loss 5.0002
+batch 9500 - loss 4.9983
+batch 10000 - loss 4.9966
+batch 10500 - loss 4.9941
+batch 11000 - loss 4.9924
+batch 11500 - loss 4.9904
+batch 12000 - loss 4.9890
+batch 12500 - loss 4.9868
+batch 13000 - loss 4.9847
+batch 13500 - loss 4.9828
+batch 14000 - loss 4.9808
+batch 14500 - loss 4.9793
+batch 15000 - loss 4.9773
+batch 15500 - loss 4.9752
+batch 16000 - loss 4.9738
+batch 16500 - loss 4.9717
+batch 17000 - loss 4.9696
+batch 17500 - loss 4.9673
+batch 18000 - loss 4.9648
+batch 18500 - loss 4.9627
+batch 19000 - loss 4.9603
+batch 19500 - loss 4.9582
+batch 20000 - loss 4.9565
+batch 20500 - loss 4.9545
+batch 21000 - loss 4.9521
+batch 21500 - loss 4.9494
+batch 22000 - loss 4.9469
+batch 22500 - loss 4.9444
+batch 23000 - loss 4.9425
+batch 23500 - loss 4.9404
+batch 24000 - loss 4.9384
+batch 24500 - loss 4.9364
+batch 25000 - loss 4.9344
+batch 25500 - loss 4.9326
+batch 26000 - loss 4.9304
+batch 26500 - loss 4.9282
+batch 27000 - loss 4.9256
+batch 27500 - loss 4.9237
+batch 28000 - loss 4.9218
+batch 28500 - loss 4.9207
+batch 29000 - loss 4.9200
+batch 29500 - loss 4.9190
+batch 30000 - loss 4.9178
+batch 30500 - loss 4.9166
+batch 31000 - loss 4.9153
+batch 31500 - loss 4.9141
+batch 32000 - loss 4.9124
+2025-10-19 22:55:37.284835: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 6739762755643223687
+2025-10-19 22:58:11.568262: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 16716683982969385044
+2025-10-19 22:58:11.568341: I tensorflow/core/framework/local_rendezvous.cc:426] Local rendezvous recv item cancelled. Key hash: 7305088996801028918
+32478/32478 - 2181s - 67ms/step - accuracy: 0.1661 - loss: 4.9106 - val_accuracy: 0.1853 - val_loss: 4.7193 - learning_rate: 1.0000e-03
+[INFO] Treinamento concluido! Modelo em versions/v4-subword-lstm/models/modelo_brwac_v4_subword_ep6.keras
+fatal: not a git repository (or any of the parent directories): .git
+[INFO] Log salvo em versions/v4-subword-lstm/logs/train_brwac_v4_subword_ep6.json

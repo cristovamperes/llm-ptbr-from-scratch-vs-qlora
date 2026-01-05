@@ -1,0 +1,37 @@
+data:
+  max_docs: 50000
+  min_doc_len: 200
+  min_line_chars: 80
+  min_alpha_ratio: 0.6
+  stride: 48
+  seq_len: 256
+  valid_split: 0.1
+tokenizer:
+  model_type: unigram
+  vocab_sizes: [12000, 16000]
+  byte_fallback: true
+  dropout: 0.1
+  stats_docs: 2000
+model:
+  d_model: 320
+  num_layers: 6
+  num_heads: 8
+  d_ff: 1280
+  dropout: 0.05
+training:
+  batch_sizes:
+    dryrun: 48
+    long: 96
+  epochs:
+    dryrun: 2
+    long: 12
+  learning_rate: 0.00025
+  warmup_steps: 4000
+  weight_decay: 0.01
+  label_smoothing: 0.0
+  fallback_penalty: 0.25
+evaluation:
+  prompts_file: analysis/artifacts/prompts/prompts_v5b.txt
+  heuristics:
+    max_fallback_ratio: 0.03
+    max_short_piece_ratio: 0.12

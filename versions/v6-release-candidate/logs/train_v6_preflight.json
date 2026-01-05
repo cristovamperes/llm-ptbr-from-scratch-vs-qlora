@@ -1,0 +1,29 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "accuracy": 0.2571823000907898,
+      "loss": 4.699565887451172,
+      "val_accuracy": 0.3307170569896698,
+      "val_loss": 4.0968523025512695,
+      "perplexity": 109.89945336333089,
+      "val_perplexity": 60.15065324040162,
+      "tokens_epoch": 156876800,
+      "tokens_seen_total": 156876800,
+      "epoch_time_sec": 1924.8768544197083
+    },
+    {
+      "epoch": 2,
+      "accuracy": 0.34148770570755005,
+      "loss": 3.9903223514556885,
+      "val_accuracy": 0.34906136989593506,
+      "val_loss": 3.97076678276062,
+      "perplexity": 54.072316844335965,
+      "val_perplexity": 53.0251740447667,
+      "tokens_epoch": 156876800,
+      "tokens_seen_total": 313753600,
+      "epoch_time_sec": 1903.004341840744
+    }
+  ],
+  "total_time_sec": 3827.9338302612305
+}

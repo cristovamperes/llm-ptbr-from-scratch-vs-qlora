@@ -1,0 +1,190 @@
+{
+  "generated_at": "2025-12-28T16:01:35Z",
+  "env": {
+    "python": "3.10.12",
+    "platform": "Linux-5.15.0-161-generic-x86_64-with-glibc2.35",
+    "torch": "2.5.1+cu121",
+    "cuda_available": true,
+    "cuda_device_count": 1,
+    "gpu_model": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_gb": 23.52,
+    "transformers": "4.57.3",
+    "datasets": "4.4.2",
+    "peft": "0.18.0",
+    "bitsandbytes": "0.49.0",
+    "accelerate": "1.12.0",
+    "git_commit": null
+  },
+  "configs": {
+    "cpt": "versions/trilha2-lora/configs/cpt_qlora_llama31_8b_brwac10k.json",
+    "sft": "versions/trilha2-lora/configs/sft_qlora_llama31_8b_instruct_canarim10k.json"
+  },
+  "generation": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "cpt": {
+    "dataset_jsonl": "versions/trilha2-lora/datasets/brwac_cpt_10k.jsonl",
+    "n_samples": 2,
+    "prompt_tokens": 256,
+    "max_new_tokens": 160,
+    "samples": [
+      {
+        "sample_id": "cpt_01",
+        "prompt": "Quando fui convidado para fazer parte da Comissão Especial de Organização do Carnaval de Cabo Frio, eu aceitei a missão com total consciência que seria um enorme desafio.\nAs escolas se esmeraram nos seus aprontos na certeza que o certame seria julgado com lisura e honestidade, resultando num dos melhores desfiles da história de Cabo Frio (dado os descontos da escassez de tempo e da reduzida subvenção).\nA pureza de nossos sentimentos apaixonados por carnaval e a inocência administrativa nos levaram a esperar que todos os setores da organização se movessem como nós e se empenhassem espontaneamente pelo êxito do evento.\nTivemos ainda a dificuldade em manter o foco, tropeçávamos em superfaturamentos, favorecimentos, protestos e dívidas esdrúxulas da administração passada... e mesmo assim tínhamos que seguir o processo de construção do evento sem esmorecer.\nO Prefeito Alair Corrêa nos contagiou com a sua vontade de",
+        "base_continuation": "fazer um carnaval de qualidade, e o Secretário de Turismo, Eduardo Pimentel, nos incentivou a manter a nossa fé.\nA Comissão Especial de Organização do Carnaval de Cabo Frio, com a presença de todos os seus membros, se reuniu na manhã de hoje, 12 de fevereiro, para discutir o resultado do julgamento do desfile das Escolas de Samba de Cabo Frio.\nA Comissão Especial de Organização do Carnaval de Cabo Frio, com a presença de todos os seus membros, se reuniu na manhã de hoje, 12 de fevereiro, para discutir o resultado do julg",
+        "cpt_continuation": "fazer um carnaval de sucesso, e a sua equipe de secretários e assessores se empenhou ao máximo para que isso acontecesse.\nO desfile foi um sucesso, e a festa de rua foi um dos melhores que já vi em Cabo Frio.\nAgora, o que resta é agradecer a todos que se empenharam para que o carnaval de Cabo Frio de 2016 fosse um sucesso.\nAgradeço também a todos que me ajudaram a manter a calma e a serenidade, e a todos que me ajudaram a manter o foco e a seriedade.\nAgradeço a todos que me ajudaram a manter a calma e a serenidade, e a todos"
+      },
+      {
+        "sample_id": "cpt_02",
+        "prompt": "Em 16 anos, o número de casos de esquistossomose no Ceará despencou de 1.267 registros no ano 2000 para 118 em 2015.\nA esquistossomose mansoni é uma infecção adquirida quando as pessoas entram em contato com água doce infectada.\nA pesca em águas interiores é o principal fator de risco para a esquistossomose no Ceará.",
+        "base_continuation": "A doença é transmitida por um verme parasita, o Schistosoma mansoni, que vive no intestino de mamíferos, incluindo humanos.\nO verme é transmitido por uma espécie de caracol, o Biomphalaria glabrata, que vive em águas paradas, como lagoas, rios e lagos.\nO Ministério da Saúde estima que 4,5 milhões de pessoas no Brasil são infectadas com o parasita. A esquistossomose é uma das principais causas de doença e morte no mundo.\nA esquistossomose é uma doença causada por um parasita, o Schistosoma mansoni, que vive no intest",
+        "cpt_continuation": "A Secretaria de Estado da Educação (Seduc) divulgou nesta quarta-feira (20) a lista dos candidatos aprovados no concurso para professor de educação infantil, pré-escola e ensino fundamental.\nOs candidatos aprovados devem comparecer ao local de trabalho para a realização do exame de saúde, a partir do dia 25 de julho, e para a assinatura do contrato de trabalho, a partir do dia 1o de agosto.\nO concurso para professor de educação infantil, pré-escola e ensino fundamental foi realizado em 2015 e teve 2.000 vagas.A Secretaria de Estado da Educação (Seduc) divulgou nesta quarta-feira ("
+      }
+    ]
+  },
+  "sft": {
+    "dataset_jsonl": "versions/trilha2-lora/datasets/canarim_sft_10k_val.jsonl",
+    "n_eval": 200,
+    "max_new_tokens": 192,
+    "timing_sec": 804.631240606308,
+    "mean_delta_f1": 0.19659732348167672,
+    "top_k": [
+      {
+        "row_idx": 8,
+        "instruction": "Descubra se uma frase tem algum trocadilho potencial nela. se assim for, saída sim. caso contrário, saída não. Eu sou um grande fã do novo filme. É realmente engraçado.",
+        "input": "",
+        "reference": "E-mail : ssrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrs",
+        "base_output": "Sim. O trocadilho está na palavra \"engraçado\", que tem um duplo sentido, podendo significar tanto \"divertido\" quanto \"relacionado a grau\".",
+        "sft_output": "E-mail : ssrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrs",
+        "base_f1": 0.0,
+        "sft_f1": 1.0,
+        "delta_f1": 1.0
+      },
+      {
+        "row_idx": 12,
+        "instruction": "Tarefa: Diga-me se o documento contém informações sobre o lançamento de um novo produto. saída sim ou não. Entrada: Documento: Estamos entusiasmados em anunciar o lançamento do nosso novo produto. É uma nova tecnologia revolucionária que mudará a maneira como você usa seu smartphone.",
+        "input": "",
+        "reference": "E-mail : ssrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrs",
+        "base_output": "Sim. O documento contém informações sobre o lançamento de um novo produto.",
+        "sft_output": "E-mail : ssrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrsrs",
+        "base_f1": 0.0,
+        "sft_f1": 1.0,
+        "delta_f1": 1.0
+      },
+      {
+        "row_idx": 16,
+        "instruction": "Classifique o sexo do autor. Artigo: A melhor maneira de cozinhar um bife na grelha.",
+        "input": "",
+        "reference": "Homem",
+        "base_output": "Não é possível determinar o sexo do autor com base no artigo fornecido, pois não há informações sobre a identidade do autor. O artigo parece ser um texto informativo sobre uma receita de cozinha, mas não fornece informações sobre a identidade do autor.",
+        "sft_output": "Homem",
+        "base_f1": 0.0,
+        "sft_f1": 1.0,
+        "delta_f1": 1.0
+      },
+      {
+        "row_idx": 30,
+        "instruction": "Tarefa: Diga-me se uma notícia é positiva ou negativa para um preço de ação da empresa. Notícia: O CEO da empresa está deixando sua posição.",
+        "input": "",
+        "reference": "Negativo",
+        "base_output": "Essa notícia é negativa para o preço da ação da empresa. A saída do CEO pode ser vista como um sinal de instabilidade e incerteza sobre o futuro da empresa, o que pode afetar negativamente a confiança dos investidores e, consequentemente, o preço da ação.",
+        "sft_output": "Negativo",
+        "base_f1": 0.0,
+        "sft_f1": 1.0,
+        "delta_f1": 1.0
+      },
+      {
+        "row_idx": 94,
+        "instruction": "Qual destas palavras está escrito incorretamente? Palavra: \"Lá\"",
+        "input": "",
+        "reference": "c)",
+        "base_output": "A palavra \"Lá\" está escrita corretamente.",
+        "sft_output": "c)",
+        "base_f1": 0.0,
+        "sft_f1": 1.0,
+        "delta_f1": 1.0
+      },
+      {
+        "row_idx": 96,
+        "instruction": "Gostaríamos que você avaliasse a QUALIDADE de cada um dos seguintes argumentos (discutir o casamento gay) e determinasse se o argumento é válido ou inválido. Um argumento válido é claramente interpretável e expressa um argumento, ou uma premissa ou uma conclusão que pode ser usada em um argumento para o tópico do casamento gay. Um argumento inválido é uma frase que não pode ser interpretada como um argumento ou não sobre o tópico do casamento gay.",
+        "input": "O problema é ... quando as pessoas continuamente obtêm seus estados para fazer leis que dizem que apenas pessoas heterossexuais podem se casar umas com as outras, então as religiões que vão e querem se casar com gays e honrar seus casamentos, agora não podem.",
+        "reference": "Válido",
+        "base_output": "Avaliação da qualidade do argumento:\n\n**Argumento:** \"O problema é quando as pessoas continuamente obtêm seus estados para fazer leis que dizem que apenas pessoas heterossexuais podem se casar umas com as outras, então as religiões que vão e querem se casar com gays e honrar seus casamentos, agora não podem.\"\n\n**Qualidade:** Inválido\n\n**Motivação:** O argumento não é claro e expressa uma ideia confusa. A frase \"O problema é quando...\" sugere que há um problema em si, mas não está claro o que é exatamente o problema. Além disso, a frase \"obtêm seus estados para fazer leis\" é ambígua e não está claro o que significa \"obtêm seus estados\". Além disso, a conclusão do argumento não está claramente relacionada às premissas",
+        "sft_output": "Válido",
+        "base_f1": 0.0,
+        "sft_f1": 1.0,
+        "delta_f1": 1.0
+      }
+    ],
+    "bottom_k": [
+      {
+        "row_idx": 182,
+        "instruction": "Quero começar um novo hobby, quais são algumas atividades que posso fazer que não custam muito dinheiro?",
+        "input": "",
+        "reference": "Pintura, desenho e esboço 2 Ir para caminhadas e passeios de acampamento 3 Desfrutar de um piquenique em um parque local 4 Stargazing e assistir o céu noturno 5 Construindo aviões ou carros modelo 6 Fazendo artesanato 7 Tomando cozinhar e aulas de panificação 8 Jardim e cultivar sua própria comida 9 Tomando caminhadas na natureza e coletar pedras e conchas 10 Juntar-se a um clube de livros ou criar o seu próprio 11 Desenvolver uma rede de amigos 12 Aprender um novo idioma 13 Criar um blog ou site 14 Escrever histórias ou poemas 15 Jogar jogos de tabuleiro ou jogos de cartas 16 Tomando fotografia ou videografia.",
+        "base_output": "Existem muitas atividades que você pode começar a praticar sem gastar muito dinheiro. Aqui estão algumas sugestões:\n\n1. **Leitura**: Visite a sua biblioteca local e pegue livros emprestados. Você também pode baixar aplicativos de leitura de e-books gratuitos, como o Calibre ou o ManyBooks.\n2. **Caminhada ou corrida**: Encontre um parque ou trilha perto de sua casa e comece a caminhar ou correr. Você não precisa de equipamentos caros para começar.\n3. **Pintura ou desenho**: Compre um kit de pintura ou desenho básico e comece a criar. Você pode encontrar muitas dicas e tutoriais gratuitos online.\n4. **Culinária**: Experimente cozinhar receitas simples e econômicas. Você pode encontrar muit",
+        "sft_output": "- Caminhada - Corrida - Ciclismo - Yoga - Pintura - Desenho - Leitura - Escrita - Jardim - Cozinhar - Jardim - Pintura - Desenho - Leitura - Escrita - Jardim - Cozinhar - Jardim - Pintura - Desenho - Leitura - Escrita - Jardim - Cozinhar - Jardim - Pintura - Desenho - Leitura - Escrita - Jardim - Cozinhar - Jardim - Pintura - Desenho - Leitura - Escrita - Jardim - Cozinhar - Jardim - Pintura - Desenho - Leitura - Escrita - Jardim - Cozinhar - Jardim - Pintura - Desenho - Leitura - Escrita - Jardim - Cozinhar",
+        "base_f1": 0.3105022831050228,
+        "sft_f1": 0.04938271604938271,
+        "delta_f1": -0.2611195670556401
+      },
+      {
+        "row_idx": 160,
+        "instruction": "Avalie o seguinte argumento e explique por que ele é válido ou inválido.",
+        "input": "O governo deve aumentar os impostos para financiar programas sociais porque as pessoas devem contribuir para o bem maior.",
+        "reference": "O argumento é válido porque a tributação é um mecanismo importante através do qual as pessoas podem contribuir para o bem comum. Os impostos são necessários para financiar programas que prestam serviços essenciais ao público, como saúde, educação e redes de segurança social. Além disso, o aumento dos impostos pode incentivar as pessoas a contribuir mais para a sociedade, criando uma sociedade mais equitativa.",
+        "base_output": "O argumento é inválido.\n\nA razão pela qual o argumento é inválido é que ele confunde a ideia de contribuição com a ideia de responsabilidade. Embora seja verdade que as pessoas devem contribuir para o bem maior, isso não significa que o governo deva aumentar os impostos para financiar programas sociais.\n\nExistem várias razões pelas quais o aumento dos impostos pode não ser a melhor solução:\n\n1. **Impacto na economia**: O aumento dos impostos pode afetar a economia, reduzindo a demanda por bens e serviços e potencialmente levando a uma redução do emprego e da produção.\n2. **Inequidade**: O aumento dos impostos pode ser injusto para certas categorias de pessoas, como os idosos ou os trabalhadores informais, que podem não ter a capacidade de pagar",
+        "sft_output": "Válido",
+        "base_f1": 0.3597883597883598,
+        "sft_f1": 0.03076923076923077,
+        "delta_f1": -0.32901912901912905
+      },
+      {
+        "row_idx": 105,
+        "instruction": "Você é dado um parágrafo e você precisa descobrir se é um anúncio ou não. se sim, output sua categoria (por exemplo, comida e bebida, moda, automóvel, etc.). Entrada: Parágrafo: Eu tive um grande dia hoje. O tempo era bonito e passei tempo com amigos e familiares.",
+        "input": "",
+        "reference": "Não é um anúncio",
+        "base_output": "Não é um anúncio.",
+        "sft_output": "Não anúncio",
+        "base_f1": 1.0,
+        "sft_f1": 0.6666666666666666,
+        "delta_f1": -0.33333333333333337
+      },
+      {
+        "row_idx": 142,
+        "instruction": "Dê um exemplo para cada um dos seguintes itens: a) um conjunto que não é um subconjunto de outro conjunto. b) um conjunto infinito. c) um subconjunto próprio de um conjunto. d) um conjunto finito. e) a união de dois conjuntos. f) a interseção de dois conjuntos.",
+        "input": "",
+        "reference": "a) 1, 2 não é um subconjunto de 1, 2, 3. b) O conjunto de números naturais é infinito. c) 1, 2 é um subconjunto próprio de 1, 2, 3. d) O conjunto de números pares é finito. e) A união dos conjuntos 1, 2 e 3, 4 é 1, 2, 3, 4. f) A interseção dos conjuntos 2, e 2,",
+        "base_output": "a) Um conjunto que não é um subconjunto de outro conjunto: Considere os conjuntos A = {1, 2, 3} e B = {4, 5, 6}. O conjunto A não é um subconjunto de B, pois não contém todos os elementos de B.\n\nb) Um conjunto infinito: O conjunto de todos os números reais, R, é um exemplo de conjunto infinito. Ele contém números como π, e, √2, etc.\n\nc) Um subconjunto próprio de um conjunto: Considere o conjunto A = {1, 2, 3}. O conjunto B = {1, 2} é um subconjunto próprio de A, pois é um subconjunto de A e não é igual a A.\n\nd) Um conjunto finito: O conjunto A = {1, 2, 3} é um exemplo",
+        "sft_output": "a) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A)",
+        "base_f1": 0.5227272727272728,
+        "sft_f1": 0.03821656050955414,
+        "delta_f1": -0.4845107122177187
+      },
+      {
+        "row_idx": 124,
+        "instruction": "Identifique se um produto foi recuperado pelo seu fabricante. saída \"recall\" ou \"not record\". Produto: Apple iPhone 6S",
+        "input": "",
+        "reference": "Não recall",
+        "base_output": "\"recall\"",
+        "sft_output": "not record",
+        "base_f1": 0.6666666666666666,
+        "sft_f1": 0.0,
+        "delta_f1": -0.6666666666666666
+      },
+      {
+        "row_idx": 193,
+        "instruction": "Você precisa ler um parágrafo e responder se é sobre esportes ou não. saída verdadeira se é sobre esportes, saída falsa se não é. Entrada: Os Golden State Warriors ganharam o campeonato da NBA pelo segundo ano consecutivo.",
+        "input": "",
+        "reference": "É verdade.",
+        "base_output": "Verdade",
+        "sft_output": "Esportes",
+        "base_f1": 0.6666666666666666,
+        "sft_f1": 0.0,
+        "delta_f1": -0.6666666666666666
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "vocab_size": 12000,
+  "model_type": "unigram",
+  "character_coverage": 0.9995,
+  "input_sentence_size": 2000000,
+  "byte_fallback": false,
+  "limit_docs": 20000,
+  "min_len": 200,
+  "corpus_chars": 163550877,
+  "corpus_docs": 80001,
+  "cleaning": {
+    "lowercase": true,
+    "end_inline_sep": "\n",
+    "min_line_chars": 40,
+    "min_alpha_ratio": 0.4,
+    "normalize_numbers": true,
+    "drop_uppercase_metadata": true
+  },
+  "model_path": "versions/v6-release-candidate/tokenizers/unigram_12k/spm_v6.model",
+  "vocab_path": "versions/v6-release-candidate/tokenizers/unigram_12k/spm_v6.vocab"
+}

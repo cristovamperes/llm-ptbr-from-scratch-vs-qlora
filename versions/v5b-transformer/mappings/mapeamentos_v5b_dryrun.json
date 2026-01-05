@@ -1,0 +1,17 @@
+{
+  "tokenization": "sentencepiece",
+  "tokenizer_model": "/root/TCC/versions/v5b-transformer/tokenizers/unigram_20k_cc99/spm_v5b.model",
+  "tokenizer_vocab_size": 18061,
+  "sequence_length": 256,
+  "stride": 48,
+  "batch_size": 48,
+  "add_bos": true,
+  "add_eos": true,
+  "model": {
+    "d_model": 320,
+    "num_layers": 6,
+    "num_heads": 8,
+    "d_ff": 1280,
+    "dropout": 0.05
+  }
+}

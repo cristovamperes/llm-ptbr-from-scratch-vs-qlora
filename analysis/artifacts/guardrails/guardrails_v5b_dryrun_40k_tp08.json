@@ -1,0 +1,76 @@
+{
+  "model_key": "v5_brwac_transformer_v5b_dryrun_40k",
+  "tokenizer": "versions\\v5b-transformer\\tokenizers\\unigram_40k\\spm_v5b.model",
+  "thresholds": {
+    "max_fallback_ratio": 0.03,
+    "max_short_piece_ratio": 0.12
+  },
+  "aggregate": {
+    "model_key": "v5_brwac_transformer_v5b_dryrun_40k",
+    "samples_count": 5,
+    "total_tokens": 1049,
+    "total_chars": 4449,
+    "avg_tokens_per_sample": 209.8,
+    "avg_chars_per_sample": 889.8,
+    "fallback_tokens": 0,
+    "fallback_ratio": 0.0,
+    "short_alpha_tokens": 97,
+    "short_alpha_ratio": 0.09246901811248809
+  },
+  "per_sample": [
+    {
+      "seed": -1,
+      "token_count": 192,
+      "char_count": 835,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 16,
+      "short_alpha_ratio": 0.08333333333333333
+    },
+    {
+      "seed": -1,
+      "token_count": 261,
+      "char_count": 1268,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 6,
+      "short_alpha_ratio": 0.022988505747126436
+    },
+    {
+      "seed": -1,
+      "token_count": 260,
+      "char_count": 1123,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 5,
+      "short_alpha_ratio": 0.019230769230769232
+    },
+    {
+      "seed": -1,
+      "token_count": 75,
+      "char_count": 345,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 5,
+      "short_alpha_ratio": 0.06666666666666667
+    },
+    {
+      "seed": -1,
+      "token_count": 261,
+      "char_count": 878,
+      "fallback_tokens": 0,
+      "fallback_ratio": 0.0,
+      "short_alpha_tokens": 65,
+      "short_alpha_ratio": 0.24904214559386972
+    }
+  ],
+  "passes": false,
+  "violations": [
+    {
+      "type": "sample_short_piece_ratio",
+      "seed": -1,
+      "value": 0.24904214559386972,
+      "threshold": 0.12
+    }
+  ]
+}

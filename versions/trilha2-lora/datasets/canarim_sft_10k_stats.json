@@ -1,0 +1,17 @@
+{
+  "dataset": "dominguesm/Canarim-Instruct-PTBR-Dataset",
+  "split": "train",
+  "seed": 42,
+  "requested_samples": 10000,
+  "total_samples": 10000,
+  "splits": {
+    "train": 8000,
+    "val": 1000,
+    "test": 1000
+  },
+  "artifacts": {
+    "train_jsonl": "versions/trilha2-lora/datasets/canarim_sft_10k_train.jsonl",
+    "val_jsonl": "versions/trilha2-lora/datasets/canarim_sft_10k_val.jsonl",
+    "test_jsonl": "versions/trilha2-lora/datasets/canarim_sft_10k_test.jsonl"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "tokenization": "sentencepiece",
+  "tokenizer_model": "/workspace/TCC/versions/v4-subword-lstm/tokenizer_v4k_bf/spm_v4k_bf.model",
+  "tokenizer_vocab_size": 4000,
+  "sequence_length": 256,
+  "stride": 32,
+  "batch_size": 32,
+  "add_bos": true,
+  "add_eos": true,
+  "model": {
+    "d_model": 256,
+    "num_layers": 4,
+    "num_heads": 8,
+    "d_ff": 1024,
+    "dropout": 0.1
+  }
+}
